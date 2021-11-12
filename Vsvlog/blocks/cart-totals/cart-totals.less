@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Block: Cart Totals
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.cart-totals{
+
+	&__row{
+		border-bottom: 1px solid @color__grey--light;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+
+		&:last-child{
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		&:after{
+			clear: both;
+			display: block;
+			content: '';
+		}
+	}
+
+	&__column{
+		width: 50%;
+		float: left;
+	}
+
+	&__key{
+		font-weight: @font__regular;
+		font-size: 14px;
+		letter-spacing: 0.08em;
+		margin: 0;
+
+		&--total{
+			font-weight: @font__bold;
+		}
+	}
+
+	&__value{
+		letter-spacing: 0.08em;
+		margin: 0;
+		text-align: right;
+
+		&--total{
+			font-weight: @font__bold;
+		}
+	}
+
+}

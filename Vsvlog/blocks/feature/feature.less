@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Block: Feature
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.feature{
+	padding-left: 105px;
+	position: relative;
+	margin-bottom: 75px;
+
+	&__icon{
+		color: @color__primary;
+		display: block;
+		position: absolute;
+		top: -26px;
+		left: 0;
+		border-radius: 50%;
+		border: 1px solid #e3e3e3;
+		width: 80px;
+		height: 80px;
+		line-height: 78px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	&__title{
+		font-size: 18px;
+		font-weight: @font__light;
+		letter-spacing: 0.08em;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.feature{
+		margin-bottom: 40px;
+		padding-left: 55px;
+
+		&__icon{
+			font-size: 15px;
+			width: 40px;
+			height: 40px;
+			top: -6px;
+			line-height: 40px;
+		}
+
+		&__title{
+			font-size: 16px;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.feature{
+		padding-left: 80px;
+
+		&__icon{
+			left: 15px;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.feature{
+		padding-top: 55px;
+		padding-left: 0;
+		text-align: center;
+
+		&__icon{
+			left: 50%;
+			top: 0;
+			margin-left: -20px;
+		}
+
+		&__title{
+			font-size: 13px;
+		}
+	}
+}

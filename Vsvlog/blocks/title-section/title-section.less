@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Block: Title Section
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.title-section{
+	text-align: center;
+	font-size: 60px;
+	font-weight: @font__thin;
+	letter-spacing: 0.08em;
+	margin-bottom: 20px;
+	letter-spacing: 0.04em;
+
+	&--small{
+		font-size: 30px;
+		letter-spacing: 0.08em;
+		margin-bottom: 30px;
+		font-weight: @font__light;
+	}
+
+	&--separator{
+		position: relative;
+		padding-bottom: 25px;
+
+		&:after{
+			position: absolute;
+			content: "";
+			display: block;
+			width: 30px;
+			height: 2px;
+			background-color: @color__primary;
+			bottom: 0px;
+		}
+	}
+
+	&--left{
+		text-align: left;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.title-section{
+		font-size: 45px;
+
+		&--small{
+			font-size: 20px;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.title-section{
+		font-size: 35px;
+
+		&--small{
+			font-size: 18px;
+		}
+	}
+}

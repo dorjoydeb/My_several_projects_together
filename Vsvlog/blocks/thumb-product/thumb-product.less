@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Block: Thumb Product
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.thumb-product{
+
+	&__title{
+		text-align: center;
+		font-size: 14px;
+		font-weight: @font__bold;
+		line-height: 22px;
+		letter-spacing: 0.08em;
+		margin-bottom: 5px;
+	}
+
+	&__price{
+		text-align: center;
+		font-size: 18px;
+		margin: 0;
+		color: darken(@color__grey, 20%);
+		letter-spacing: 0.08em;
+		font-weight: @font__regular;
+	}
+
+	&__link{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		padding-top: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__label{
+		position: absolute;
+		text-transform: uppercase;
+		right: 22px;
+		top: 22px;
+		color: @color__primary;
+		z-index: 10;
+		font-size: 14px;
+		font-weight: @font__bold;
+		letter-spacing: 0.14em;
+	}
+
+	&__image{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		&--back{
+			z-index: 5;
+			opacity: 0;
+			-webkit-transition: opacity 3s ease;
+			   -moz-transition: opacity 3s ease;
+			    -ms-transition: opacity 3s ease;
+			     -o-transition: opacity 3s ease;
+			        transition: opacity 3s ease;
+			
+
+			.thumb-product--active &{
+				opacity: 1;
+			}
+		}
+	}
+}

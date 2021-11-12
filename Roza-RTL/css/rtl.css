@@ -1,0 +1,333 @@
+body{
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.owl-carousel,
+.audioplayer1{
+    direction: ltr;
+}
+
+.owl-carousel .owl-item,
+.owl-carousel .owl-dots{
+    direction: rtl;
+}
+
+.widget .post-area .post-item .entry-meta, 
+.widget .post-area .post-item .entry-title,
+.tweets .owl-carousel .owl-nav,
+.align-left,
+.flex-justify-section .flex-col-3:first-child,
+.flex-list-section.meta-left .entry-header .entry-meta, 
+.flex-list-section.meta-left .entry-header .entry-title,
+.table-type-1 table tr > th,
+.table-type-1 table tr > td{
+    text-align: right;
+}
+
+.align-right,
+.flex-justify-section .flex-col-3:last-child{
+    text-align: left;
+}
+
+.f-right{
+    float: left;
+}
+
+.f-left,
+#main-navigation > ul > li,
+.widget .post-area .post-item .post-thumbnail,
+.comment-section.flex-list-section .full-width.flex-columns-2 .post-thumbnail{
+    float: right;
+}
+
+.sub-menu-wrap ul li.sub > a:after,
+#header .social-icon-list:after,
+.searchform-wrap form button{
+    right: auto;
+    left: 0;
+}
+
+.sub-menu-wrap,
+.flex-list-section.meta-left .post-item .entry-header:not(.meta-center) .entry-title a:after,
+.post-area.item-style-2 .post-item .entry-meta:after{
+    left: auto;
+    right: 0;
+}
+
+.sub-menu-wrap .sub-menu-wrap.sub-menu-inner{
+    left: auto;
+    right: 100%;
+}
+
+.custom-select .select-title{
+    padding-left: 50px;
+    padding-right: 15px;
+}
+
+.custom-select .select-title:before{
+    right: auto;
+    left: 20px;
+}
+
+.table-type-1.type-2 table tr > th{
+    border-left: 1px solid #efefef;
+    border-right: 0;
+}
+
+.comment-section.flex-list-section.post-area.item-style-2 .post-item.comment-inner{
+    padding-left: 0;
+    padding-right: 120px;
+}
+
+.comment-section.flex-list-section .post-item.full-width.flex-columns-2:not(:last-child):before{
+    left: auto;
+    right: 60px;
+}
+
+.comment-section.flex-list-section.post-area.item-style-2 .post-item.comment-inner .post-thumbnail .caption:before{
+    left: auto;
+    right: -62px;
+}
+
+.comment-section.flex-list-section.post-area.item-style-2 .post-item.comment-inner .post-thumbnail .caption:after{
+    right: auto;
+    left: calc(100% - 60px);
+}
+
+.post-nav .post-next:after{
+    content: '\e8e1';
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.post-nav .post-prev:before{
+    content: '\e8e2';
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.buttons-area a{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+[class*="default-list-"] li:before{
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+.tabs .tabs-nav li{
+    float: right;
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+.accordion .a-title:before{
+    right: auto;
+    left: 20px;
+}
+
+.alert-close{
+    float: left;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.widget-tags > a{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.widget .post-area .post-item .entry-header{
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+#header .social-icon-list{
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+#header button.search-button{
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.item-overlay .overlay-content a[class*="mad-icon"]:nth-child(n+2){
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.custom-owl-next:before{content: '\e8e1';}
+
+.custom-owl-prev:before{content: '\e8e2';}
+
+.first-letter > span{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.default-list-numb li span{
+    float: right;
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+.post-action .social-icon-list span{
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+.sub-menu-wrap ul li.sub > a:after{content: '\e8e4';}
+
+[class*="carousel-type"] .owl-dot:not(:last-child){
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.social-icon-list ul li:not(:last-child),
+.social-icon-list.with-counter ul li:not(:last-child),
+.post-area .post-item .entry-meta .default-list-disk > li .social-icon-list ul li:not(:last-child){
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+#main-navigation > ul > li{
+    margin-right: 0;
+    margin-left: 33px;
+}
+
+#main-navigation > ul > li.dropdown > a:after{
+    margin-left: 0;
+    margin-right: 7px;
+}
+
+.close-search-form{
+    right: auto;
+    left: 25px;
+}
+
+.searchform-wrap input{
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.post-icon-list ul li a:before{
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.with-counter ul li span{
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+.newsletter .button, .search-area .button{
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.post-icon-list ul li:not(:last-child){
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.go-to-top.go-top-visible{
+    right: auto;
+    left: 40px;
+}
+
+.entry-meta .default-list-disk > li{
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.entry-meta [class*="default-list-"] li:before{
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+@media only screen and (max-width:1199px){
+
+
+
+}
+
+@media only screen and (max-width:992px){
+
+    #advanced-menu-hide{
+        right: auto!important;
+        left: 30px!important;
+    }
+
+    .mobile-advanced ul ul li > a:before{
+        margin-right: 0!important;
+        margin-left: 5px!important;
+        content: "\e8e4"!important;
+    }
+
+    .sub-menu-wrap ul li.sub > a:after{
+        right: auto!important;
+        left: 20px!important;
+    }
+
+    .mobile-advanced ul ul ul li > a{
+        padding-left: 30px!important;
+        padding-right: 55px!important;
+    }
+
+    .mobile-advanced ul ul li > a{
+        padding-left: 20px!important;
+        padding-right: 30px!important;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    [class*="col-md-"]{float:right;}
+
+    .with-right-separator #main{
+        border-right: 0!important;
+        border-left: 1px solid #eee!important;
+        padding-right: 0!important;
+        padding-left: 30px!important;
+    }
+
+    .with-left-separator #main{
+        border-right: 1px solid #eee!important;
+        border-left: 0!important;
+        padding-right: 30px!important;
+        padding-left: 0!important;
+    }
+
+    .sbr #sidebar{
+        padding-left: 0!important;
+        padding-right: 30px!important;
+    }
+
+    .sbl #sidebar{
+        padding-left: 30px!important;
+        padding-right: 0!important;
+    }
+
+}
+
+@media only screen and (min-width:768px){
+
+    [class*="col-sm-"]{float:right;}
+
+}
+
+@media (max-width: 767px){
+
+
+}
+
+@media only screen and (min-width: 480px){
+
+    [class*="col-xs-"]{float:right;}
+
+}

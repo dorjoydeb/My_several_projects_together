@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Block: Menu Mobile
+   Dependencies: jquery.slinky.less
+   Docs: https://github.com/alizahid/slinky/
+   ========================================================================== */
+
+.menu-mobile{
+	text-align: center;
+
+
+	a&__link{
+		background-color: white;
+		color: @color__black;
+		.transition-color();
+		position: relative;
+		font-size: 16px;
+		letter-spacing: 0.13em;
+		display: inline-block;
+		vertical-align: top;
+		padding: 1em 50px;
+
+		.menu__item--active &{
+			color: @color__primary;
+		}
+
+		&.next:after{
+			float: none;
+			position: absolute;
+			right: 20px;
+			top: 15px;
+			font-size: 11px;
+			font-family: @icon__primary;
+			content: "\e606";
+		}
+
+		&:hover{
+			background-color: white;
+			color: @color__primary;
+		}
+	}
+
+	&__child{
+		padding-bottom: 15px;
+	}
+
+	a.back{
+		background-color: white;
+		.transition-color();
+		color: @color__black;
+		font-size: 15px;
+		letter-spacing: 0.13em;
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		padding: 1em 40px;
+		margin-bottom: 15px;
+		color: @color__grey;
+
+		&:before{
+			position: absolute;
+			font-size: 11px;
+			left: 10px;
+			font-family: @icon__primary;
+			content: "\e605";
+		}
+
+		&:hover{
+			background-color: white;
+			color: @color__primary;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Block: App Preview
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.app-preview{
+
+	&--mb{
+		margin-bottom: -140px;
+	}
+
+	&__image{
+		width: 450px;
+		max-width: 100%;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.app-preview{
+		margin: 0;
+	}
+}

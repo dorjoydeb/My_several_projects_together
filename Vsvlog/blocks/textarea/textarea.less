@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Block: Textarea
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.textarea{
+	display: block;
+	width: 100%;
+	line-height: 20px;
+	padding: 10px 40px 10px 15px;
+	border-radius: 0;
+	max-width: 100%;
+	border: 1px solid @color__grey--light;
+	outline: none;
+	font-size: 12px;
+	font-weight: @font__light;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+	.transition(border-color);
+	.placeholder(
+		{
+			font-family: @font__secondary;
+			font-style: italic;
+			font-size: 11px;
+			letter-spacing: 0.14em;
+			color: @color__black;
+		}
+	);
+	
+
+	&.error{
+		text-align: left;
+		color: rgb(185, 74, 72);
+	}
+
+	&:focus{
+		border-color: @color__black;
+	}
+
+	&--comment{
+		height: 226px;
+	}
+}

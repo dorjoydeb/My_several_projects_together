@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Block: Product
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.product{
+
+	&__title{
+		font-size: 30px;
+		line-height: 1.5;
+		margin: 0;
+		letter-spacing: 0.08em;
+	}
+
+	&__description{
+		font-size: 14px;
+		font-weight: @font__regular;
+		letter-spacing: 0.04em;
+		line-height: 23px;
+		margin-bottom: 30px;
+	}
+
+	&__code{
+		font-size: 13px;
+		color: @color__grey;
+		font-weight: @font__regular;
+		letter-spacing: 0.08em;
+		line-height: 23px;
+		margin-bottom: 30px;
+		position: relative;
+
+		&:after{
+			// position: absolute;
+			// content: "";
+			// display: block;
+			width: 30px;
+			height: 2px;
+			background-color: @color__primary;
+			bottom: 0px;
+		}
+
+	}
+
+	&__price{
+		font-size: 18px;
+		margin-bottom: 30px;
+		letter-spacing: 0.08em;
+		font-weight: @font__regular;
+	}
+
+	&__subtitle{
+		font-size: 14px;
+		font-weight: @font__bold;
+		margin-bottom: 15px;
+		letter-spacing: 0.04em;
+	}
+
+	&__colors{
+
+	}
+
+	&__color{
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1;
+		*display: inline;
+		width: 35px;
+		height: 35px;
+		margin-right: 10px;
+		cursor: pointer;
+		position: relative;
+
+		&--active{
+			border: 2px solid fade(@color__black, 30%)
+		}
+	}
+
+	&__sizes{
+		&:after{
+			display: block;
+			content: '';
+			clear: both;
+		}
+	}
+
+	&__size{
+		background-color: lighten(@color__black, 95%);
+		float: left;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 0 14px;
+		font-size: 10px;
+		letter-spacing: 0.08em;
+		text-align: center;
+		line-height: 35px;
+		height: 35px;
+		margin-right: 10px;
+		vertical-align: middle;
+
+		&--active{
+			line-height: 32px;
+			border: 2px solid fade(@color__black, 60%)
+		}
+	}
+
+	&__section{
+		margin-bottom: 30px;
+	}
+}

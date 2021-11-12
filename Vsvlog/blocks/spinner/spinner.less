@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Block: Spinner
+   Dependencies: jquery.spinner.js
+   Docs: https://github.com/vsn4ik/jquery.spinner
+   ========================================================================== */
+
+.spinner{
+	background-color: lighten(@color__black, 95%);
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+
+	&__input{
+		border: none;
+		background-color: transparent;
+		box-shadow: none;
+		display: inline-block;
+		vertical-align: top;
+		zoom: 1;
+		*display: inline;
+		width: 50px;
+		text-align: center;
+		height: 35px;
+
+		&:focus{
+			box-shadow: none;
+		}
+	}
+
+	&__button{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 15px;
+		line-height: 35px;
+		cursor: pointer;
+
+		&:hover{
+			background-color: lighten(@color__black, 90%);
+		}
+	}
+
+}

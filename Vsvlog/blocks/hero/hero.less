@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Block: Hero
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.hero{
+	background-image: url("@{img__common--background}about.jpg");
+	background-position: bottom right;
+	background-size: cover;
+
+	&__overlay{
+		.transition(background-color);
+		padding: 170px 0;
+	}
+
+	&--book{
+		background-image: none;
+		overflow: hidden;
+
+		.hero__holder{
+			background-color: #f7f7f7;
+			background-image: none;
+			padding-top: 150px;
+			padding-bottom: 90px; 
+			margin-bottom: 150px;
+		}
+	}
+
+	&__title{
+		font-size: 60px;
+		font-weight: @font__thin;
+		color: @color__black;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+
+		.hero--book &{
+			text-transform: none;
+		}
+	}
+
+	&__description{
+		font-size: 14px;
+		font-weight: @font__regular;
+		letter-spacing: 0.08em;
+		margin-bottom: 30px;
+	}
+
+	&__image{
+		width: 800px;
+		max-width: none;
+		position: absolute;
+		top: -50px
+	}
+}
+
+.media-mixin(@break) when (@break = @break-large-x) {
+	.hero{
+		&__overlay{
+			padding: 130px 0;
+			background-color: rgba(255, 255, 255, 0.8);
+			background-color: #f7f7f7;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.hero{
+		&__title{
+			font-size: 50px;
+			margin-bottom: 30px;
+		}
+
+		&__description{
+			font-size: 11px;
+		}
+
+		&__overlay{
+			padding: 100px 0;
+			background-color: #f7f7f7;
+		}
+
+		&--book{
+			.hero__holder{
+				padding: 80px 0;
+				margin-bottom: 100px;
+			}
+
+			.hero__title{
+				text-align: center;
+			}
+
+			.hero__description{
+				text-align: center;
+			}
+		}
+
+		&__image{
+			position: relative;
+			width: 120%;
+			top: 0;
+			left: 20%;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.hero{
+
+		&__title{
+			font-size: 45px;
+		}
+
+		&--book{
+			.hero__holder{
+				margin-bottom: 80px;
+			}
+		}
+
+		&__overlay{
+			padding: 60px 0;
+			background-color: #f7f7f7;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.hero{
+		border-top: 1px solid @color__grey--light;
+		border-bottom: 1px solid @color__grey--light;
+		background-position: 700px bottom;
+
+		&__title{
+			font-size: 35px;
+		}
+
+		&--book{
+			border: 0;
+
+			.hero__holder{
+				margin-bottom: 60px;
+				padding: 40px 0;
+			}
+		}
+
+		&__overlay{
+			background-color: white;
+		}
+
+		&--book{
+			.hero__image{
+				left: 40px;
+				width: 150%;
+			}
+		}
+	}
+}

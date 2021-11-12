@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Block: Comment
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.comment{
+	position: relative;
+	padding-left: 160px;
+
+	&:after{
+		display: block;
+		clear: both;
+		content: '';
+	}
+
+	&__image{
+		width: 128px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&__user{
+		font-weight: @font__bold;
+		letter-spacing: 0.04em;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	&__date{
+		color: @color__grey;
+		font-weight: @font__regular;
+		margin: 0;
+		position: absolute;
+		letter-spacing: 0.04em;
+		font-size: 12px;
+		right: 0;
+		top: 0;
+	}
+
+	&__text{
+		font-size: 14px;
+		font-weight: @font__regular;
+		letter-spacing: 0.04em;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	&__reply{
+		font-size: 14px;
+		font-style: italic;
+		font-family: @font__secondary;
+	}
+
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.comment{
+		padding-left: 0;
+		padding-top: 80px;
+
+		&__image{
+			width: 60px;
+		}
+
+		&__user{
+			position: absolute;
+			top: 10px;
+			left: 80px;
+		}
+
+		&__date{
+			top: 30px;
+			left: 80px;
+		}
+	}
+}

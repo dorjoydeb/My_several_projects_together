@@ -1,0 +1,224 @@
+/* ==========================================================================
+   Block: Slider
+   Dependencies: wallop.less
+   Docs: https://github.com/peduarte/wallop
+   ========================================================================== */
+
+.slider{
+	position: relative;
+
+	&__item{
+		line-height: 0;
+	}
+
+	&__image{
+
+	}
+
+	&__nav{
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		height: 110px;
+		margin-top: -55px;
+		width: 100%;
+		z-index: 2;
+	}
+
+	&__nav-btn{
+		position: absolute;
+		top: 0;
+		letter-spacing: 0.5em;
+		line-height: 110px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+	&__nav-btn--prev{ left: 0px; }
+	&__nav-btn--next{ right: 0px; }
+
+	&__nav-image{
+		height: 110px;
+		width: 190px;
+		background-size: cover;
+		position: relative;
+		.transition(transform);
+
+		.slider__nav-btn--next &{
+			right: -118px;
+		}
+
+		.slider__nav-btn--prev &{
+			left: -124px;
+		}
+
+		.slider__nav-btn--next:hover &{
+			.translateX(-70px);
+		}
+
+		.slider__nav-btn--prev:hover &{
+			.translateX(70px);
+		}
+	}
+
+	&__nav-text{
+		position: absolute;
+		top: 0;
+		.transition(transform);
+		
+		.slider__nav-btn--prev &{
+			left: 40px;
+		}
+		
+		.slider__nav-btn--next &{
+			right: 40px;
+		}
+
+		.slider__nav-btn--next:hover &{
+			.translateX(-10px);
+		}
+
+		.slider__nav-btn--prev:hover &{
+			.translateX(10px);
+		}
+	}
+
+	&__overlay{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: fade(@color__black, 50%);
+	}
+
+	&__position{
+		position: absolute;
+		width: 100%;
+	}
+
+	&__position--center{
+		top: 48%;
+		.translateY(-50%);
+	}
+
+	&__position--bottom{
+		bottom: 55px;
+		text-align: center;
+	}
+
+	&__title{
+		font-size: 60px;
+		opacity: 0;
+		color: #fff;
+		letter-spacing: 0.08em;
+		font-weight: @font__thin;
+		text-align: center;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto 20px auto;
+	}
+	&__subtitle{
+		font-size: 18px;
+		opacity: 0;
+		color: #fff;
+		letter-spacing: 0.08em;
+		line-height: 23px;
+		width: 100%;
+		max-width: 700px;
+		padding: 0 30px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__play-button{
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.5em;
+
+		&:hover{
+			color: #fff;
+		}
+	}
+
+	&__play-button-icon{
+		color: #fff;
+		font-size: 10px;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-large-x) {
+	.slider{
+		&__title{ font-size: 60px; }
+		&__subtitle{ font-size: 16px; } 
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.slider{
+		&__nav-btn{
+			&:after{
+				display: block;
+				font-family: @icon__primary;
+				font-size: 25px;
+			}
+
+			&--prev:after{ content: "\e605"; padding-left: 15px; }
+			&--next:after{ content: "\e606"; padding-right: 15px; }
+		}
+
+		&__nav-image, &__nav-text{
+			display: none;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.slider{
+		&__position{
+			&--center{ top: 50%; }
+			&--bottom{ bottom: 30px;}
+		}
+
+		&__title{ font-size: 40px; }
+		&__subtitle{ font-size: 12px; padding: 0 50px; }
+		&__play-button{ font-size: 11px; }
+		&__play-button-icon{ font-size: 9px; }
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.slider{
+		&__title{
+			font-size: 25px;
+		}
+
+		&__subtitle{
+			font-size: 10px;
+			line-height: 2;
+		}
+
+		&__play-button{
+			font-size: 10px;
+		}
+
+		&__play-button-icon{
+			font-size: 8px;
+		}
+
+		&__nav-btn:after{
+			font-size: 16px;
+		}
+
+		&__image{
+			margin-left: 50%;
+			.translateX(-50%);
+			height: 300px;
+			max-width: none;
+			width: auto;
+		}
+	}
+}

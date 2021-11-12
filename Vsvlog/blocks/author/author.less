@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Block: Author
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.author{
+	position: relative;
+	padding-left: 90px;
+	padding-top: 15px;
+
+	&__image{
+		position: absolute;
+		left: 0;
+		top: 0;
+		max-width: 70px;
+		border-radius: 50%;
+	}
+
+	&__name{
+		font-size: 18px;
+		color: @color__primary;
+		font-weight: @font__regular;
+		letter-spacing: 0.14em;
+		margin-bottom: 9px;
+	}
+
+	&__description{
+		font-size: 14px;
+		font-weight: @font__regular;
+		font-family: @font__secondary;
+		letter-spacing: 0.08em;
+	}
+
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.author{
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}

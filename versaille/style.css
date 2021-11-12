@@ -1,0 +1,2647 @@
+/*-------------------------------------------------------------------------
+    
+    Theme Name: Versaille
+    Theme URI: http://template.themeton.com/versaille
+    Author: ThemeTon
+    Author URI: http://themeton.com
+    Description: Blogging HTML5, CSS3 template for your creative works
+    Version: 1.0
+
+  -------------------------------------------------------------------------
+ 
+    Table of Contents
+
+    01. Header
+    02. Helpers
+    03. Elements
+    04. Content
+    05. Blog
+    06. Comments
+    07. Page
+    08. Portfolio
+    09. Widgets
+    10. Footer
+    11. Responsive
+  
+  -------------------------------------------------------------------------*/
+
+/* line 1, http://themeton/versaillehtml/less/style.less */
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* Header Style
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/header.less */
+#header {
+  background-color: #ef4416;
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 10px;
+}
+/* line 8, http://themeton/versaillehtml/less/header.less */
+#header .entry-header {
+  display: none;
+  padding: 90px;
+}
+/* line 12, http://themeton/versaillehtml/less/header.less */
+#header .entry-header nav {
+  display: block;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 20, http://themeton/versaillehtml/less/header.less */
+#header .entry-header nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+/* line 26, http://themeton/versaillehtml/less/header.less */
+#header .entry-header nav ul li {
+  display: inline-block;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+/* line 31, http://themeton/versaillehtml/less/header.less */
+#header .entry-header nav ul li a {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 41, http://themeton/versaillehtml/less/header.less */
+#header .entry-header nav ul li ul {
+  display: none;
+}
+/* line 47, http://themeton/versaillehtml/less/header.less */
+#header .entry-header nav ul li:hover a,
+#header .entry-header nav ul li.active a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 57, http://themeton/versaillehtml/less/header.less */
+#header .entry-header.show-menu nav {
+  opacity: 1;
+}
+/* line 64, http://themeton/versaillehtml/less/header.less */
+#header .header-close {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -100px;
+  display: none;
+}
+/* line 75, http://themeton/versaillehtml/less/header.less */
+#header .header-close svg path {
+  fill: #ffffff;
+}
+/* line 80, http://themeton/versaillehtml/less/header.less */
+#header .header-close a {
+  position: absolute;
+  font-size: 14px;
+  color: #ef4416;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  left: 80px;
+  top: 5px;
+}
+/* line 95, http://themeton/versaillehtml/less/header.less */
+#header .header-tool {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+}
+/* line 104, http://themeton/versaillehtml/less/header.less */
+#header .header-tool .entry-tool {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+}
+/* line 111, http://themeton/versaillehtml/less/header.less */
+#header .header-tool .entry-tool svg path {
+  fill: #ef4416;
+}
+/* line 120, http://themeton/versaillehtml/less/header.less */
+#header .header-tool .entry-tool a {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  left: 80px;
+  top: 5px;
+}
+/* line 133, http://themeton/versaillehtml/less/header.less */
+#header .header-tool .entry-tool + .entry-tool {
+  margin-left: -100px;
+}
+/* line 147, http://themeton/versaillehtml/less/header.less */
+.section-header {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 151, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh {
+  text-align: center;
+  overflow: hidden;
+}
+/* line 155, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .logo {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+/* line 163, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .logo span {
+  color: #ef4416;
+}
+/* line 169, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search {
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  text-align: left;
+}
+/* line 175, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search a {
+  font-size: 18px;
+  line-height: 30px;
+  display: inline-block;
+}
+/* line 181, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form {
+  display: inline-block;
+  width: 200px;
+  padding-left: 20px;
+  width: 0px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+/* line 191, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form input {
+  width: 100%;
+  border: 0px;
+  font-family: 'Open Sans';
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* line 203, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form input::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 204, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form input:-moz-placeholder {
+  color: #999999;
+}
+/* line 205, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form input::-moz-placeholder {
+  color: #999999;
+}
+/* line 206, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form input:-ms-input-placeholder {
+  color: #999999;
+}
+/* line 209, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search form .submit {
+  display: none;
+}
+/* line 215, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search:hover a {
+  color: #ef4416;
+}
+/* line 218, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .search:hover form {
+  width: 200px;
+}
+/* line 226, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: -5px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 20;
+}
+/* line 238, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li > a {
+  font-family: 'Montserrat';
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.118);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 253, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li ul {
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  min-width: 130px;
+  padding: 0px;
+  text-align: left;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.118);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  transition-duration: 0.5s;
+  transform: translateY(-10px);
+  opacity: 0;
+  display: inline-block;
+}
+/* line 270, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li ul li {
+  display: block;
+}
+/* line 273, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li ul li a {
+  display: block;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000000;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 283, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li ul li a span {
+  float: right;
+  font-family: 'Open Sans';
+  text-transform: none;
+}
+/* line 289, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li ul li a:hover {
+  color: #ef4416;
+}
+/* line 298, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li:hover > a {
+  color: #ef4416;
+}
+/* line 301, http://themeton/versaillehtml/less/header.less */
+.section-header .entry-sh .right-nav > li:hover ul {
+  transform: translateY(0px);
+  opacity: 1;
+}
+/* Elements
+====================================*/
+/* Element: Heading
+------------------------------------------*/
+/* line 3, http://themeton/versaillehtml/less/elements.less */
+.tt-el-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* line 7, http://themeton/versaillehtml/less/elements.less */
+.tt-el-heading h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 0px;
+}
+/* line 17, http://themeton/versaillehtml/less/elements.less */
+.tt-el-heading h5 {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Montserrat';
+  color: #999999;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 0px;
+  margin-top: 25px;
+}
+/* line 29, http://themeton/versaillehtml/less/elements.less */
+.tt-el-heading.medium h5 {
+  margin-top: 15px;
+}
+/* Element: Chart
+------------------------------------------*/
+/* line 40, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 45, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel {
+  display: block;
+  text-align: center;
+  border: 1px solid #eee;
+  line-height: 0px;
+  position: relative;
+  margin-top: 160px;
+}
+/* line 53, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel::before {
+  content: '';
+  border: 1px solid #eee;
+  border-bottom: 0px;
+  left: -1px;
+  right: -1px;
+  top: -20%;
+  bottom: 100%;
+  position: absolute;
+}
+/* line 64, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg {
+  display: inline-block;
+  width: 35%;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 5;
+}
+/* line 71, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg + .entry-svg {
+  margin-left: -190px;
+}
+/* line 75, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg svg {
+  display: inline-block;
+  width: 100%;
+}
+/* line 79, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg svg path {
+  fill: #ef4416;
+}
+/* line 85, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg .entry-hover {
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  right: 0px;
+  margin-bottom: -15px;
+  text-align: center;
+  bottom: 80%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 109, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg .entry-hover .entry-percent {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.118);
+  font-family: 'Montserrat';
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 124, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg .entry-hover .entry-label {
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 137, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg .entry-hover .entry-label span {
+  display: inline-block;
+  background-color: #232323;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 0px;
+  text-transform: uppercase;
+  padding: 17px 20px;
+  border-radius: 4px;
+  position: relative;
+}
+/* line 150, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg .entry-hover .entry-label span::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #232323 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: -8px;
+}
+/* line 167, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .entry-svg .entry-hover:hover .entry-label {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 178, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .back-grid {
+  position: absolute;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  top: 20%;
+  left: 0%;
+  bottom: 20%;
+  right: 0%;
+  z-index: 0;
+}
+/* line 188, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-panel .back-grid::before {
+  content: '';
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 33.3%;
+  bottom: 33.3%;
+}
+/* line 208, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart.showed .entry-panel .entry-svg .entry-hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 220, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-labels {
+  text-align: center;
+  margin-top: 40px;
+}
+/* line 224, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-labels .label-item {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* line 234, http://themeton/versaillehtml/less/elements.less */
+.tt-el-chart .entry-labels .label-item i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/* Element: Team
+------------------------------------------*/
+/* line 253, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team {
+  position: relative;
+  overflow: hidden;
+}
+/* line 257, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team {
+  position: relative;
+  padding: 0px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+/* line 264, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .sizer {
+  width: 100%;
+}
+/* line 268, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.118);
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 50%;
+  margin-top: -100px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  transition-duration: 0.6s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  transform: scaleY(0);
+}
+/* line 285, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover .hover-title {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 303, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover .hover-title span {
+  display: block;
+}
+/* line 307, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover .hover-title .name {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 315, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover .hover-title .position {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+}
+/* line 323, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover .hover-socials {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 339, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team .entry-hover .hover-socials a {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 351, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team:hover .entry-hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/* line 359, http://themeton/versaillehtml/less/elements.less */
+.tt-el-team .entry-team:hover .entry-hover .hover-title,
+.tt-el-team .entry-team:hover .entry-hover .hover-socials {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* Element: Team
+------------------------------------------*/
+/* line 379, http://themeton/versaillehtml/less/elements.less */
+.tt-el-curved-line {
+  text-align: center;
+  position: relative;
+  display: block;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 387, http://themeton/versaillehtml/less/elements.less */
+.tt-el-curved-line svg {
+  width: 212px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+/* line 393, http://themeton/versaillehtml/less/elements.less */
+.tt-el-curved-line svg path {
+  fill: #ffffff;
+  stroke: #eee;
+  stroke-width: 1;
+  stroke-linecap: square;
+}
+/* Content
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/content.less */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 24px;
+  padding: 50px;
+}
+/* line 10, http://themeton/versaillehtml/less/content.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #000000;
+  margin-bottom: 1em;
+}
+/* line 27, http://themeton/versaillehtml/less/content.less */
+p {
+  margin-bottom: 1.3em;
+}
+/* line 32, http://themeton/versaillehtml/less/content.less */
+img {
+  max-width: 100%;
+}
+/* line 36, http://themeton/versaillehtml/less/content.less */
+a {
+  color: #000000;
+}
+/* line 39, http://themeton/versaillehtml/less/content.less */
+a:active,
+a:focus,
+a:hover {
+  color: #ef4416;
+  text-decoration: none;
+  outline: none;
+}
+/* line 51, http://themeton/versaillehtml/less/content.less */
+.wrapper {
+  background-color: #ffffff;
+}
+/* line 58, http://themeton/versaillehtml/less/content.less */
+.border-top {
+  border-top: 1px solid rgba(153, 153, 153, 0.18);
+}
+/* line 59, http://themeton/versaillehtml/less/content.less */
+.border-left {
+  border-left: 1px solid rgba(153, 153, 153, 0.18);
+}
+/* line 60, http://themeton/versaillehtml/less/content.less */
+.border-right {
+  border-right: 1px solid rgba(153, 153, 153, 0.18);
+}
+/* line 61, http://themeton/versaillehtml/less/content.less */
+.border-bottom {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.18);
+}
+/* line 65, http://themeton/versaillehtml/less/content.less */
+.section-content {
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+/* line 69, http://themeton/versaillehtml/less/content.less */
+.section-content .entry-cover {
+  width: 100%;
+  position: relative;
+}
+/* line 73, http://themeton/versaillehtml/less/content.less */
+.section-content .entry-cover img {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 80, http://themeton/versaillehtml/less/content.less */
+.section-content .entry-cover-single {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 500px;
+  position: relative;
+}
+/* line 90, http://themeton/versaillehtml/less/content.less */
+.section-content .entry-cover-single .entry-title {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#80000000', GradientType=0);
+  /* IE6-9 */
+}
+/* line 104, http://themeton/versaillehtml/less/content.less */
+.section-content .entry-cover-single .entry-title h1 {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1.2em;
+  margin-top: 100px;
+}
+/* line 117, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single {
+  line-height: 2em;
+}
+/* line 120, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta {
+  position: relative;
+  overflow: hidden;
+  font-size: 12px;
+}
+/* line 125, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta span {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 129, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta span i {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 135, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta .entry-cats {
+  float: right;
+  text-transform: uppercase;
+}
+/* line 139, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta .entry-cats a {
+  display: inline-block;
+  margin-left: 5px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  position: relative;
+}
+/* line 146, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta .entry-cats a::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 2px;
+  height: 1px;
+  background-color: #000000;
+}
+/* line 157, http://themeton/versaillehtml/less/content.less */
+.section-content .content-single .entry-meta .entry-cats a:hover::after {
+  background-color: #ef4416;
+}
+/* line 170, http://themeton/versaillehtml/less/content.less */
+blockquote {
+  background-color: transparent;
+  padding: 40px;
+  border: 2px solid #ef4416;
+  font-style: normal;
+  color: #ef4416;
+  font-size: 14px;
+  line-height: 1.8em;
+  float: right;
+  margin-left: 60px;
+  width: 40%;
+  margin-top: 10px;
+}
+/* line 183, http://themeton/versaillehtml/less/content.less */
+blockquote cite {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* line 196, http://themeton/versaillehtml/less/content.less */
+form input:not([type="submit"]),
+form textarea {
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  background-color: transparent;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+/* line 209, http://themeton/versaillehtml/less/content.less */
+form input:not([type="submit"]):focus,
+form textarea:focus {
+  outline: none;
+  border-color: #ef4416;
+  color: #ef4416;
+}
+/* line 215, http://themeton/versaillehtml/less/content.less */
+form input:not([type="submit"])::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 216, http://themeton/versaillehtml/less/content.less */
+form input:not([type="submit"]):-moz-placeholder,
+form textarea:-moz-placeholder {
+  color: #999999;
+}
+/* line 217, http://themeton/versaillehtml/less/content.less */
+form input:not([type="submit"])::-moz-placeholder,
+form textarea::-moz-placeholder {
+  color: #999999;
+}
+/* line 218, http://themeton/versaillehtml/less/content.less */
+form input:not([type="submit"]):-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #999999;
+}
+/* line 221, http://themeton/versaillehtml/less/content.less */
+form textarea {
+  min-height: 180px;
+}
+/* line 225, http://themeton/versaillehtml/less/content.less */
+form input[type=submit] {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  box-shadow: none;
+  border: 1px solid #000000;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 237, http://themeton/versaillehtml/less/content.less */
+form input[type=submit]:hover {
+  background-color: transparent;
+  color: #000000;
+}
+/* Blog
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/blog.less */
+.blog-grid {
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+/* line 5, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item {
+  padding: 0px;
+}
+/* line 8, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .sizer {
+  width: 100%;
+}
+/* line 12, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(153, 153, 153, 0.3);
+  position: relative;
+}
+/* line 20, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media .entry-hover {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 34, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media .entry-hover a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+}
+/* line 60, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media .entry-hover.type-media a {
+  background-color: #ef4416;
+  color: #fff;
+}
+/* line 68, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media:hover .entry-hover {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 72, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media:hover .entry-hover a {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+/* line 80, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media .curved-shape {
+  position: absolute;
+  height: 200px;
+  width: 50px;
+  right: 0px;
+  top: 50%;
+  margin-top: -100px;
+}
+/* line 88, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-media .curved-shape path {
+  fill: #ffffff;
+}
+/* line 94, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-info {
+  position: relative;
+}
+/* line 97, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-info .entry-excerpt {
+  position: absolute;
+  top: 120px;
+  bottom: 120px;
+  left: 50px;
+  right: 50px;
+  text-align: center;
+}
+/* line 105, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-info .entry-excerpt h3 {
+  margin: 0px;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 114, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-info .entry-excerpt p {
+  margin: 0px;
+  margin-top: 30px;
+  color: #999999;
+}
+/* line 121, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-info .entry-category {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  right: 0px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 134, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item .entry-info .entry-date {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  right: 0px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 151, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item.horizontal {
+  overflow: hidden;
+}
+/* line 154, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item.horizontal .entry-media {
+  width: 50%;
+  float: left;
+}
+/* line 159, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item.horizontal .entry-info {
+  width: 50%;
+  float: left;
+}
+/* line 169, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item.horizontal.media-right .entry-media {
+  float: right;
+}
+/* line 172, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item.horizontal.media-right .entry-media .curved-shape {
+  right: auto;
+  left: 0px;
+}
+/* line 187, http://themeton/versaillehtml/less/blog.less */
+.blog-grid .blog-item.vertical .entry-media .curved-shape {
+  margin-left: -100px;
+  width: 200px;
+  height: 50px;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  left: 50%;
+}
+/* line 205, http://themeton/versaillehtml/less/blog.less */
+.blog-pager {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 212, http://themeton/versaillehtml/less/blog.less */
+.blog-pager ul {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+}
+/* line 217, http://themeton/versaillehtml/less/blog.less */
+.blog-pager ul li {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 12px;
+}
+/* line 223, http://themeton/versaillehtml/less/blog.less */
+.blog-pager ul li a,
+.blog-pager ul li span {
+  color: #000000;
+  display: inline-block;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 236, http://themeton/versaillehtml/less/blog.less */
+.blog-pager ul li span,
+.blog-pager ul li a:hover {
+  background-color: #ef4416;
+  color: #fff;
+}
+/* line 248, http://themeton/versaillehtml/less/blog.less */
+.content-single .entry-title h2 {
+  text-align: center;
+}
+/* line 253, http://themeton/versaillehtml/less/blog.less */
+.content-single p {
+  color: #727272;
+  line-height: 36px;
+}
+/* line 260, http://themeton/versaillehtml/less/blog.less */
+.content-single .entry-image img {
+  padding: 30px 0;
+}
+/* line 267, http://themeton/versaillehtml/less/blog.less */
+.content-single .entry-desc span {
+  font-style: italic;
+  font-size: 13px;
+}
+/* line 273, http://themeton/versaillehtml/less/blog.less */
+.content-single .entry-desc h4 {
+  font-size: 14px;
+}
+/* line 277, http://themeton/versaillehtml/less/blog.less */
+.content-single .entry-desc p {
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 13px;
+  font-style: italic;
+}
+/* line 289, http://themeton/versaillehtml/less/blog.less */
+.content-single .entry-social a {
+  padding-right: 15px;
+}
+/* line 296, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-tags h4 {
+  color: #121212;
+  font-size: 14px;
+  position: absolute;
+}
+/* line 302, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-tags .tags {
+  padding-left: 100px;
+}
+/* line 305, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-tags .tags a {
+  font-size: 13px;
+  line-height: 13px;
+  display: inline-block;
+  color: #818181;
+  background: #f1f1f1;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+}
+/* line 314, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-tags .tags a:hover {
+  background: #ef4416;
+  color: #fff;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 325, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share h4 {
+  color: #121212;
+  font-size: 14px;
+  position: absolute;
+}
+/* line 331, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social {
+  padding-left: 100px;
+  display: block;
+}
+/* line 335, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li {
+  margin-right: 5px;
+  padding: 15px 20px;
+  list-style: none;
+  float: left;
+  line-height: 13px;
+  margin-bottom: 5px;
+}
+/* line 343, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li.facebook {
+  background: #3b5a9b;
+}
+/* line 347, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li.twitter {
+  background: #49abf2;
+}
+/* line 351, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li.pinterest {
+  background: #bd2126;
+}
+/* line 355, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li.instagram {
+  background: #125688;
+}
+/* line 359, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li:hover {
+  background: #ef4416;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 364, http://themeton/versaillehtml/less/blog.less */
+.content-single .blog-share .social li a {
+  font-size: 13px;
+  line-height: 13px;
+  color: #fff;
+}
+/* Comments
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/comments.less */
+.section-comment {
+  background: #f9f9f9;
+  padding-bottom: 100px;
+}
+/* line 6, http://themeton/versaillehtml/less/comments.less */
+#comments {
+  margin-top: 60px;
+}
+/* line 9, http://themeton/versaillehtml/less/comments.less */
+#comments .comments-title {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+/* line 17, http://themeton/versaillehtml/less/comments.less */
+#comments .comments-title span {
+  text-transform: none;
+  font-size: 13px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  display: block;
+}
+/* line 27, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 32, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list ol,
+#comments .comment-list ul {
+  list-style-type: none;
+  margin-left: 60px;
+}
+/* line 37, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article {
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+/* line 43, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+/* line 49, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-avatar {
+  float: left;
+}
+/* line 53, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body {
+  margin-left: 125px;
+}
+/* line 56, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body .meta-data {
+  overflow: hidden;
+  display: block;
+}
+/* line 61, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body .comment-author {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+  float: left;
+}
+/* line 71, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body .comment-date {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: italic;
+  font-size: 13px;
+  color: #999999;
+  margin-left: 40px;
+}
+/* line 80, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body .comment-content {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  color: #999999;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 90, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body .comment-reply-link {
+  font-family: 'Montserrat';
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  color: #000000;
+  line-height: 11px;
+}
+/* line 98, http://themeton/versaillehtml/less/comments.less */
+#comments .comment-list article .comment-body .comment-reply-link:hover {
+  color: #ef4416;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 110, http://themeton/versaillehtml/less/comments.less */
+#respond {
+  padding-top: 40px;
+}
+/* line 113, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-reply-title {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+/* line 122, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-reply-title span {
+  text-transform: none;
+  font-size: 13px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  display: block;
+}
+/* line 136, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form p {
+  margin-bottom: 0;
+}
+/* line 140, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input:not([type="submit"]),
+#respond .comment-form textarea {
+  background: #fff;
+  border: 0px;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  width: 100%;
+  font-family: 'Open Sans';
+  font-size: 13px;
+  margin-bottom: 0px;
+  text-transform: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 155, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input:not([type="submit"]):focus,
+#respond .comment-form textarea:focus {
+  outline: none;
+  color: #ef4416;
+}
+/* line 160, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input:not([type="submit"])::-webkit-input-placeholder,
+#respond .comment-form textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 161, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input:not([type="submit"]):-moz-placeholder,
+#respond .comment-form textarea:-moz-placeholder {
+  color: #999999;
+}
+/* line 162, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input:not([type="submit"])::-moz-placeholder,
+#respond .comment-form textarea::-moz-placeholder {
+  color: #999999;
+}
+/* line 163, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input:not([type="submit"]):-ms-input-placeholder,
+#respond .comment-form textarea:-ms-input-placeholder {
+  color: #999999;
+}
+/* line 166, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input[type="url"] {
+  border-right: 1px solid #e8e8e8;
+}
+/* line 171, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form textarea {
+  min-height: 230px;
+  margin-bottom: 10px;
+  border-right: 1px solid #e8e8e8;
+  border-top: 0;
+}
+/* line 178, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input[type=submit] {
+  float: right;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  color: #fff;
+  background-color: #000000;
+  box-shadow: none;
+  border: 1px solid #000000;
+  padding: 15px 25px;
+  line-height: 12px;
+  text-transform: uppercase;
+  font-weight: normal;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 192, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form input[type=submit]:hover {
+  background-color: transparent;
+  color: #000000;
+}
+/* line 198, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form .form-submit {
+  float: right;
+}
+/* line 200, http://themeton/versaillehtml/less/comments.less */
+#respond .comment-form .form-submit span {
+  font-size: 13px;
+  color: #999999;
+  font-style: italic;
+  margin-right: 35px;
+  vertical-align: middle;
+  line-height: 37px;
+}
+/* Page
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/page.less */
+.clients-logo {
+  text-align: center;
+}
+/* line 4, http://themeton/versaillehtml/less/page.less */
+.clients-logo a {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 9, http://themeton/versaillehtml/less/page.less */
+.clients-logo img {
+  display: inline-block;
+}
+/* line 16, http://themeton/versaillehtml/less/page.less */
+.tt-google-map {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+/* line 22, http://themeton/versaillehtml/less/page.less */
+.tt-google-map img {
+  max-width: none !important;
+}
+/* line 26, http://themeton/versaillehtml/less/page.less */
+.tt-google-map > #gmap_content {
+  display: none;
+}
+/* line 34, http://themeton/versaillehtml/less/page.less */
+#gmap_content .gmap-item {
+  text-align: right;
+  overflow: hidden;
+  padding: 20px 20px;
+}
+/* line 39, http://themeton/versaillehtml/less/page.less */
+#gmap_content .gmap-item label {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 160px;
+  text-align: left;
+  float: left;
+}
+/* line 49, http://themeton/versaillehtml/less/page.less */
+#gmap_content .gmap-item label i {
+  font-size: 14px;
+  margin-right: 15px;
+}
+/* line 55, http://themeton/versaillehtml/less/page.less */
+#gmap_content .gmap-item span {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: normal;
+  color: #000000;
+}
+/* line 62, http://themeton/versaillehtml/less/page.less */
+#gmap_content .gmap-item + .gmap-item {
+  border-top: 1px solid #eee;
+}
+/* Portfolio
+====================================*/
+/* line 3, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-bottom: 140px;
+  margin-top: 45px;
+}
+/* line 10, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #eeeeee;
+  top: 13px;
+  lef: 0px;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.039);
+}
+/* line 22, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a {
+  display: inline-block;
+  position: relative;
+  margin-left: 45px;
+  margin-right: 45px;
+  line-height: 0px;
+}
+/* line 29, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a .circle {
+  width: 31px;
+  height: 31px;
+  background-color: #eeeeee;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.039);
+}
+/* line 37, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a .circle .entry-circle {
+  display: inline-block;
+  border-radius: 50%;
+  background-image: -moz-linear-gradient(90deg, #f2f2f2 0%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(90deg, #f2f2f2 0%, #ffffff 100%);
+  background-image: -ms-linear-gradient(90deg, #f2f2f2 0%, #ffffff 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.157);
+  width: 21px;
+  height: 21px;
+  position: relative;
+  top: 5px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+/* line 58, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a .circle .entry-circle .line {
+  width: 1px;
+  height: 7px;
+  background-color: #dfdfdf;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+/* line 67, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a .circle .entry-circle .line::before,
+.portfolio-grid .entry-filter a .circle .entry-circle .line::after {
+  content: '';
+  width: 1px;
+  height: 7px;
+  background-color: #dfdfdf;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -3px;
+}
+/* line 78, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a .circle .entry-circle .line::after {
+  left: 3px;
+}
+/* line 85, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a .label {
+  position: absolute;
+  bottom: -45px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999999;
+  display: block;
+  width: 180px;
+  left: 50%;
+  margin-left: -90px;
+  text-align: center;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 104, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a:nth-child(even) .label {
+  bottom: auto;
+  top: -45px;
+}
+/* line 113, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a.active .circle .entry-circle {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+/* line 120, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a.active .label {
+  color: #ef4416;
+}
+/* line 126, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-filter a:hover .label {
+  color: #ef4416;
+}
+/* line 139, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item {
+  padding: 0px;
+  position: relative;
+}
+/* line 143, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item a {
+  display: inline-block;
+}
+/* line 147, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item img {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 152, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item .entry-hover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 168, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item .entry-hover .entry-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 172, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item .entry-hover .entry-title span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-bottom: 40px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+/* line 193, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item .entry-hover .entry-title a {
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #fff;
+  background-color: #ef4416;
+  display: block;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  opacity: 0;
+}
+/* line 217, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item .entry-hover::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0px;
+}
+/* line 229, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item:hover .entry-hover {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 233, http://themeton/versaillehtml/less/portfolio.less */
+.portfolio-grid .entry-portfolio .folio-item:hover .entry-hover span,
+.portfolio-grid .entry-portfolio .folio-item:hover .entry-hover a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+/* line 244, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio {
+  border-top: 1px solid #eeeeee;
+  color: #999999;
+}
+/* line 248, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+/* line 254, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .carousel-control {
+  background: none;
+  opacity: 1;
+  text-shadow: none;
+  color: #000;
+}
+/* line 260, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .carousel-control:hover {
+  color: #ef4416;
+}
+/* line 265, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .carousel-control span:before {
+  padding: 10px;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0px 2px 2px -2px #000000;
+}
+/* line 275, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-desc li {
+  list-style: none;
+  color: #999999;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+/* line 281, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-desc li em {
+  color: #000000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 17px;
+}
+/* line 291, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-desc li a {
+  color: #999999;
+}
+/* line 294, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-desc li a:hover {
+  color: #ef4416;
+}
+/* line 301, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-nav {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.118);
+  display: inline-flex;
+}
+/* line 306, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-nav a {
+  border: 1px solid #eeeeee;
+  padding: 15px 22px;
+  font-size: 12px;
+}
+/* line 313, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-nav .tooltip.top {
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 316, http://themeton/versaillehtml/less/portfolio.less */
+.single-folio .folio-nav .tooltip.top .tooltip-inner {
+  color: #999999;
+  font-size: 11px;
+}
+/* Widgets
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/widgets.less */
+.widget {
+  margin-bottom: 55px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+/* line 8, http://themeton/versaillehtml/less/widgets.less */
+.widget h5,
+.widget .widget-title {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 1.8px;
+  margin-bottom: 30px;
+  position: relative;
+}
+/* line 18, http://themeton/versaillehtml/less/widgets.less */
+.widget h5::after,
+.widget .widget-title::after {
+  content: '';
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 10px;
+}
+/* line 28, http://themeton/versaillehtml/less/widgets.less */
+.widget ul,
+.widget ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+/* line 38, http://themeton/versaillehtml/less/widgets.less */
+.widget ul li,
+.widget ol li {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+/* line 44, http://themeton/versaillehtml/less/widgets.less */
+.widget ul li::before,
+.widget ol li::before {
+  content: '•';
+  margin-right: 5px;
+}
+/* line 49, http://themeton/versaillehtml/less/widgets.less */
+.widget ul li a,
+.widget ol li a {
+  color: #000000;
+}
+/* line 53, http://themeton/versaillehtml/less/widgets.less */
+.widget ul li span,
+.widget ol li span {
+  float: right;
+  color: #999999;
+  font-style: italic;
+}
+/* line 60, http://themeton/versaillehtml/less/widgets.less */
+.widget ul li:hover a,
+.widget ol li:hover a {
+  text-decoration: none;
+  color: #ef4416;
+}
+/* line 71, http://themeton/versaillehtml/less/widgets.less */
+.widget .widget-tags a {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  text-transform: none;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border: 1px solid rgba(153, 153, 153, 0.1);
+}
+/* line 81, http://themeton/versaillehtml/less/widgets.less */
+.widget .widget-tags a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+/* line 90, http://themeton/versaillehtml/less/widgets.less */
+.widget .social-links {
+  display: block;
+}
+/* line 93, http://themeton/versaillehtml/less/widgets.less */
+.widget .social-links a {
+  display: inline-block;
+  background-color: #414141;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  color: #fff;
+  line-height: 37px;
+  font-size: 14px;
+  margin-right: 6px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 110, http://themeton/versaillehtml/less/widgets.less */
+.widget .social-links a:hover {
+  background-color: #272727;
+}
+/* line 119, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+/* line 123, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item .entry-w-media {
+  float: left;
+}
+/* line 126, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item .entry-w-media img {
+  width: 80px;
+  height: 80px;
+}
+/* line 131, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item .entry-w-info {
+  margin-left: 100px;
+}
+/* line 134, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item .entry-w-info h4 {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0px;
+}
+/* line 141, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item .entry-w-info h4 a {
+  color: #000000;
+}
+/* line 145, http://themeton/versaillehtml/less/widgets.less */
+.widget .recent-posts .entry-w-item .entry-w-info .date {
+  font-size: 11px;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: italic;
+  color: #999999;
+  margin-top: 10px;
+}
+/* line 159, http://themeton/versaillehtml/less/widgets.less */
+.widget .images-list {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+/* line 163, http://themeton/versaillehtml/less/widgets.less */
+.widget .images-list > div {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+/* line 167, http://themeton/versaillehtml/less/widgets.less */
+.widget .images-list a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+/* line 171, http://themeton/versaillehtml/less/widgets.less */
+.widget .images-list a img {
+  width: 100%;
+}
+/* line 181, http://themeton/versaillehtml/less/widgets.less */
+.search_form {
+  position: relative;
+}
+/* line 184, http://themeton/versaillehtml/less/widgets.less */
+.search_form input {
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #999999;
+  padding: 10px 20px;
+  padding-right: 40px;
+  width: 100%;
+}
+/* line 196, http://themeton/versaillehtml/less/widgets.less */
+.search_form input:focus {
+  outline: none;
+}
+/* line 201, http://themeton/versaillehtml/less/widgets.less */
+.search_form button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: transparent;
+  border: 0px;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 0px 15px;
+  color: #999999;
+}
+/* Footer
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/footer.less */
+#footer {
+  border-bottom: 10px solid #ef4416;
+  text-align: center;
+  color: #999999;
+  padding-top: 90px;
+}
+/* line 7, http://themeton/versaillehtml/less/footer.less */
+#footer .socials {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 10, http://themeton/versaillehtml/less/footer.less */
+#footer .socials a {
+  color: #999999;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 18, http://themeton/versaillehtml/less/footer.less */
+#footer .socials a:hover {
+  color: #ef4416;
+}
+/* line 24, http://themeton/versaillehtml/less/footer.less */
+#footer .scroll-top {
+  width: 200px;
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0px;
+  display: block;
+  position: relative;
+  margin-top: 50px;
+}
+/* line 37, http://themeton/versaillehtml/less/footer.less */
+#footer .scroll-top svg path {
+  fill: #ef4416;
+}
+/* line 42, http://themeton/versaillehtml/less/footer.less */
+#footer .scroll-top a {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  line-height: 40px;
+  text-align: center;
+}
+/* Helpers
+====================================*/
+/* line 1, http://themeton/versaillehtml/less/helpers.less */
+.inner-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 6, http://themeton/versaillehtml/less/helpers.less */
+.inner-table .inner-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 13, http://themeton/versaillehtml/less/helpers.less */
+.padding4x {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 19, http://themeton/versaillehtml/less/helpers.less */
+.text-light {
+  color: #fff;
+}
+/* line 22, http://themeton/versaillehtml/less/helpers.less */
+.text-light.title-lg,
+.text-light.title-md {
+  color: #fff;
+}
+/* line 31, http://themeton/versaillehtml/less/helpers.less */
+.text-brand {
+  color: #ef4416;
+}
+/* line 36, http://themeton/versaillehtml/less/helpers.less */
+.ph1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 37, http://themeton/versaillehtml/less/helpers.less */
+.ph2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 38, http://themeton/versaillehtml/less/helpers.less */
+.ph3 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 39, http://themeton/versaillehtml/less/helpers.less */
+.ph4 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* line 40, http://themeton/versaillehtml/less/helpers.less */
+.ph5 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* line 41, http://themeton/versaillehtml/less/helpers.less */
+.ph6 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+/* line 42, http://themeton/versaillehtml/less/helpers.less */
+.ph7 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+/* line 43, http://themeton/versaillehtml/less/helpers.less */
+.ph8 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+/* line 44, http://themeton/versaillehtml/less/helpers.less */
+.ph9 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+/* line 45, http://themeton/versaillehtml/less/helpers.less */
+.ph10 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* line 46, http://themeton/versaillehtml/less/helpers.less */
+.ph11 {
+  padding-left: 110px;
+  padding-right: 101px;
+}
+/* line 47, http://themeton/versaillehtml/less/helpers.less */
+.ph12 {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+/* line 48, http://themeton/versaillehtml/less/helpers.less */
+.ph13 {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+/* line 49, http://themeton/versaillehtml/less/helpers.less */
+.ph14 {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+/* line 50, http://themeton/versaillehtml/less/helpers.less */
+.ph15 {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+/* line 51, http://themeton/versaillehtml/less/helpers.less */
+.ph16 {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+/* line 52, http://themeton/versaillehtml/less/helpers.less */
+.ph0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 53, http://themeton/versaillehtml/less/helpers.less */
+.phl0 {
+  padding-left: 0px;
+}
+/* line 54, http://themeton/versaillehtml/less/helpers.less */
+.phr0 {
+  padding-right: 0px;
+}
+/* line 58, http://themeton/versaillehtml/less/helpers.less */
+.pv1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 59, http://themeton/versaillehtml/less/helpers.less */
+.pv2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 60, http://themeton/versaillehtml/less/helpers.less */
+.pv3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 61, http://themeton/versaillehtml/less/helpers.less */
+.pv4 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 62, http://themeton/versaillehtml/less/helpers.less */
+.pv5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 63, http://themeton/versaillehtml/less/helpers.less */
+.pv6 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* line 64, http://themeton/versaillehtml/less/helpers.less */
+.pv7 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* line 65, http://themeton/versaillehtml/less/helpers.less */
+.pv8 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 66, http://themeton/versaillehtml/less/helpers.less */
+.pv9 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+/* line 67, http://themeton/versaillehtml/less/helpers.less */
+.pv10 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 68, http://themeton/versaillehtml/less/helpers.less */
+.pv11 {
+  padding-top: 110px;
+  padding-bottom: 101px;
+}
+/* line 69, http://themeton/versaillehtml/less/helpers.less */
+.pv12 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* line 70, http://themeton/versaillehtml/less/helpers.less */
+.pv13 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+/* line 71, http://themeton/versaillehtml/less/helpers.less */
+.pv14 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+/* line 72, http://themeton/versaillehtml/less/helpers.less */
+.pv15 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+/* line 73, http://themeton/versaillehtml/less/helpers.less */
+.pv16 {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+/* line 74, http://themeton/versaillehtml/less/helpers.less */
+.pv0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* line 75, http://themeton/versaillehtml/less/helpers.less */
+.pvt0 {
+  padding-top: 0px;
+}
+/* line 76, http://themeton/versaillehtml/less/helpers.less */
+.pvb0 {
+  padding-bottom: 0px;
+}
+/* Responsive
+====================================*/
+@media (min-width: 1300px) {
+  /* line 2, http://themeton/versaillehtml/less/responsive.less */
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 1299px) {
+  /* line 7, http://themeton/versaillehtml/less/responsive.less */
+  .container {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+/* Large Devices - Desktops */
+/* Medium Devices - Desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 30, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-info .entry-excerpt {
+    top: 50%;
+  }
+  /* line 33, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-info .entry-excerpt p {
+    display: none;
+  }
+  /* line 43, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  /* line 50, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-portfolio .col-md-4 {
+    width: 33.3%;
+  }
+  /* line 59, http://themeton/versaillehtml/less/responsive.less */
+  .tt-el-chart .entry-panel .entry-svg + .entry-svg {
+    margin-left: -140px;
+  }
+}
+/* Small Devices - Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 74, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter:before {
+    display: none;
+  }
+  /* line 78, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 70px;
+  }
+  /* line 84, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a:nth-child(even) .label {
+    top: auto;
+    bottom: -45px;
+  }
+  /* line 92, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-portfolio .col-md-4 {
+    width: 33.3%;
+  }
+  /* line 98, http://themeton/versaillehtml/less/responsive.less */
+  .pv10 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 103, http://themeton/versaillehtml/less/responsive.less */
+  .pv15 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* line 108, http://themeton/versaillehtml/less/responsive.less */
+  .ph15 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 117, http://themeton/versaillehtml/less/responsive.less */
+  #header .entry-header nav ul li {
+    display: block;
+  }
+  /* line 128, http://themeton/versaillehtml/less/responsive.less */
+  #header .entry-header nav ul li {
+    display: block;
+  }
+  /* line 138, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal .entry-media {
+    width: 100%;
+  }
+  /* line 141, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal .entry-media .curved-shape {
+    transform: rotate(270deg);
+    margin-left: -25px;
+    top: auto;
+    right: auto;
+    bottom: 0px;
+    margin-bottom: -75px;
+    left: 50%!important;
+  }
+  /* line 152, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal .entry-info {
+    width: 100%;
+  }
+  /* line 157, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal.media-left .entry-media .curved-shape {
+    transform: rotate(-270deg);
+  }
+  /* line 165, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-info .entry-excerpt {
+    top: 50%;
+  }
+  /* line 167, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-info .entry-excerpt p {
+    display: none;
+  }
+  /* line 178, http://themeton/versaillehtml/less/responsive.less */
+  .tt-el-chart .entry-panel .entry-svg + .entry-svg {
+    margin-left: -120px;
+  }
+}
+/* Extra Small Devices - Phones */
+@media screen and (max-width: 767px) {
+  /* line 191, http://themeton/versaillehtml/less/responsive.less */
+  .folio-desc {
+    padding: 0;
+  }
+  /* line 197, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter:before {
+    display: none;
+  }
+  /* line 201, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 70px;
+  }
+  /* line 207, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a:nth-child(even) .label {
+    top: auto;
+    bottom: -45px;
+  }
+  /* line 215, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-portfolio .col-sm-6 {
+    width: 50%;
+  }
+  /* line 225, http://themeton/versaillehtml/less/responsive.less */
+  #header .entry-header nav ul li {
+    display: block;
+  }
+  /* line 236, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal .entry-media {
+    width: 100%;
+  }
+  /* line 239, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal .entry-media .curved-shape {
+    transform: rotate(270deg);
+    margin-left: -25px;
+    top: auto;
+    right: auto;
+    bottom: 0px;
+    margin-bottom: -75px;
+    left: 50%!important;
+  }
+  /* line 250, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal .entry-info {
+    width: 100%;
+  }
+  /* line 255, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item.horizontal.media-left .entry-media .curved-shape {
+    transform: rotate(-270deg);
+  }
+  /* line 262, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-excerpt {
+    top: 100px;
+  }
+  /* line 271, http://themeton/versaillehtml/less/responsive.less */
+  .tt-el-chart .entry-panel .entry-svg + .entry-svg {
+    margin-left: -100px;
+  }
+  /* line 278, http://themeton/versaillehtml/less/responsive.less */
+  .pv10 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* line 283, http://themeton/versaillehtml/less/responsive.less */
+  .pv15 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /* line 288, http://themeton/versaillehtml/less/responsive.less */
+  .ph15 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 296, http://themeton/versaillehtml/less/responsive.less */
+  #respond .col-sm-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 307, http://themeton/versaillehtml/less/responsive.less */
+  body {
+    padding: 30px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 313, http://themeton/versaillehtml/less/responsive.less */
+  body {
+    padding: 0;
+  }
+  /* line 319, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter:before {
+    display: none;
+  }
+  /* line 323, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  /* line 328, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-filter a:nth-child(even) .label {
+    top: auto;
+    bottom: -45px;
+  }
+  /* line 336, http://themeton/versaillehtml/less/responsive.less */
+  .portfolio-grid .entry-portfolio .col-xs-12 {
+    width: 100%;
+  }
+  /* line 345, http://themeton/versaillehtml/less/responsive.less */
+  .tt-el-chart .entry-panel .entry-svg + .entry-svg {
+    margin-left: -60px;
+  }
+  /* line 351, http://themeton/versaillehtml/less/responsive.less */
+  .tt-el-chart .entry-labels .label-item {
+    display: block;
+    margin: 0;
+  }
+  /* line 361, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-info .entry-excerpt {
+    top: 50%;
+  }
+  /* line 363, http://themeton/versaillehtml/less/responsive.less */
+  .blog-grid .blog-item .entry-info .entry-excerpt p {
+    display: none;
+  }
+  /* line 373, http://themeton/versaillehtml/less/responsive.less */
+  .blog-pager ul li {
+    margin-bottom: 20px;
+  }
+}
+/* Internet Explorer
+====================================*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  /* line 4, http://themeton/versaillehtml/less/ie.less */
+  #header .header-tool {
+    bottom: 0;
+    top: -40px;
+  }
+  /* line 9, http://themeton/versaillehtml/less/ie.less */
+  #header .header-tool .entry-tool a {
+    top: 50px;
+  }
+  /* line 17, http://themeton/versaillehtml/less/ie.less */
+  #footer .scroll-top {
+    margin-bottom: -51px;
+  }
+}

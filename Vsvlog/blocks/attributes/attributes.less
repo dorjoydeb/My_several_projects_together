@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Block: Attributes
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.attributes{
+
+	line-height: 1.5;
+	margin: 0 auto;
+	letter-spacing: 0.08em;
+	border: 1px solid lighten(@color__black, 85%);
+	width: 75%;
+
+	th{
+		font-weight: @font__regular;
+		text-align: left;
+	}
+
+	td, th{
+		padding: 20px;
+		border-bottom: 1px solid lighten(@color__black, 85%);
+	}
+
+	tr:last-child td, tr:last-child th{
+		border: 0;
+	}		
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.attributes{
+		width: 90%;
+	}
+}

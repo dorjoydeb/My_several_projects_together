@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Block: Thumb Gallery
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.thumb-gallery{
+	padding-left: 80px;
+	line-height: 0;
+	position: relative;
+	margin-bottom: 60px;
+
+	&__content{
+		opacity: 1;
+		.transition(opacity);
+		font-size: 14px;
+		letter-spacing: 0.08em;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 150px;
+		color: @color__black;
+		z-index: 5;
+
+		.thumb-gallery:hover &{
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	&__date{
+		font-weight: @font__regular;
+		font-size: inherit;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		position: relative;
+
+		&:after{
+			position: absolute;
+			content: "";
+			display: block;
+			width: 30px;
+			height: 2px;
+			background-color: @color__primary;
+			bottom: 0px;
+		}
+	}
+
+	&__description{
+		font-weight: @font__regular;
+		line-height: 23px;
+		font-size: inherit;
+	}
+
+	&__image{
+		opacity: 0.3;
+		-webkit-backface-visibility: hidden;
+		.transition(opacity);
+
+		.thumb-gallery:hover &{
+			opacity: 1;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.thumb-gallery{
+		padding-top: 40px;
+		margin-bottom: 30px;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.thumb-gallery{
+		padding-top: 30px;
+		padding-left: 40px;
+	}
+}

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Block: Button
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.button{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 0 25px;
+	height: 50px;
+	outline: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: @font__regular;
+	letter-spacing: 0.14em;
+	color: #4a4a4a;
+	background-color: transparent;
+	.transition-custom(color 0.25s ease, border-color 0.25s ease);
+
+	&:hover{
+		color: @color__primary;
+		border-color: @color__primary;
+	}
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+	&--upper{
+		text-transform: uppercase;
+	}
+
+	&__icon{
+		font-size: 18px;
+		vertical-align: -2px;
+		margin-right: 10px;
+		.transition(color);
+
+		.button:hover &{
+			color: @color__primary;
+		}
+
+		.button--download &{
+			vertical-align: top;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.button{
+		padding: 0 15px;
+	}
+}

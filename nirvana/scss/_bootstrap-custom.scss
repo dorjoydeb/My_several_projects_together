@@ -1,0 +1,67 @@
+// custom variables and override bootstrap variables
+$white:						#fff;
+$black:						#000;
+$black2:					#181818;
+$light-gray:				#c1c1c0;
+$light-gray2:				#9fa4a8;
+$light-gray3:				#ccc;
+$light-gray4:				#a7acb0;
+$light-gray5:				#bbb;
+$dark-gray:					#181817;
+$gray:						#73787c;
+$yellow:					#e6c55d;
+$black-haze:				#f6f6f6;
+$sunglow:					#ffcc39;
+
+
+/* Scaffolding */
+$text-color:				#7a7978;
+$link-color:				#ffcc39;
+$link-hover-color:			#e8b932;
+$body-bg:					$white;
+
+
+/* Typography */
+$font-size-base:			16px;
+$base-line-height:			24px;
+$font-family-base:			'Crimson Text', Arial, Helvetica, sans-serif;
+$font-montsrrat:			Montserrat, Arial, Helvetica, sans-serif;
+$font-lato:					Lato, Arial, Helvetica, sans-serif;
+$font-raleway:				Raleway, Arial, Helvetica, sans-serif;
+$font-merriweather:			Merriweather, Arial, Helvetica, sans-serif;
+$font-size-h1:36px;
+$font-size-h2:28px;
+$font-size-h3:18px;
+$font-size-h4:16px;
+$font-size-h5:14px;
+$font-size-h6:12px;
+$headings-font-family:$font-montsrrat;
+$headings-font-weight: 700;
+$headings-color:#3c4145;
+
+/* Buttons */
+
+$btn-font-weight: 700;
+$btn-default-color:$black;
+$btn-default-bg:transparent;
+$btn-default-border:$black;
+$btn-primary-color:$white;
+$btn-primary-bg:$black;
+$btn-primary-border:transparent;
+
+/* Forms */
+
+$input-bg: $white;
+$input-color:#333332;
+$input-color-placeholder: #333332;
+$input-border:#333332;
+$input-border-radius: 0;
+$input-border-focus: transparent;
+$input-height-base: 45px;
+
+
+/* container sizes */
+
+$grid-gutter-width:      30px;
+$screen-lg:        1210px;
+$container-lg:       1200px;

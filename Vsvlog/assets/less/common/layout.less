@@ -1,0 +1,52 @@
+body{
+	font-size: 14px;
+	line-height: 100%;
+	font-family: @font__primary;
+	color: @color__black;
+}
+
+.container{
+	padding: 0 20px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.content{
+
+	&--top{
+		padding-top: 80px;
+	}
+
+	&--bottom{
+		padding-bottom: 80px;
+	}
+}
+
+
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.content{
+		&--top{
+			padding-top: 60px;
+		}
+
+		&--bottom{
+			padding-bottom: 60px;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.content{
+		&--top{
+			padding-top: 40px;
+		}
+
+		&--bottom{
+			padding-bottom: 40px;
+		}
+	}
+}

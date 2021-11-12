@@ -1,0 +1,57 @@
+#footer{
+    border-bottom: 10px solid @brand-color;
+    text-align: center;
+    color: @color-text;
+    padding-top: 90px;
+
+    .socials{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        a{
+            color: @color-text;
+            font-size: 18px;
+            display: inline-block;
+            margin-left: 8px;
+            margin-right: 8px;
+            .transition();
+
+            &:hover{
+                color: @brand-color;
+            }
+        }
+    }
+
+    .scroll-top{
+        width: 200px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 0px;
+        display: block;
+        position: relative;
+        margin-top: 50px;
+
+        svg{
+
+            path{
+                fill: @brand-color;
+            }
+        }
+
+        a{
+            position: absolute;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            margin-left: -20px;
+            margin-top: -20px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+}

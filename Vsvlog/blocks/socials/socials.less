@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Block: Socials
+   Dependencies: no dependencies
+   ========================================================================== */
+.socials{
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 15px;
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	&__link{
+		font-size: 13px;
+		color: @color__black;
+		.transition-color();
+
+		&:hover{
+			color: @color__primary;
+		}
+	}
+
+	&--right{
+		text-align: right;
+	}
+
+	&--large{
+		.socials__item{
+			margin-right: 20px;
+		}
+
+		.socials__link{
+			font-size: 15px;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.socials{
+		&--right{
+			text-align: center;
+		}
+	}
+}

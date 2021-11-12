@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Block: Form Comment
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.form-comment{
+	&__button{
+		background-color: white;
+		border: 1px solid @color__black;
+		color: @color__black;
+		display: block;
+		width: 100%;
+		padding: 15px 20px;
+		text-transform: uppercase;
+		outline: none;
+		font-size: 14px;
+		letter-spacing: 0.5em;
+		-webkit-transition: border-color .25s ease, color .25s ease;
+		   -moz-transition: border-color .25s ease, color .25s ease;
+		    -ms-transition: border-color .25s ease, color .25s ease;
+		     -o-transition: border-color .25s ease, color .25s ease;
+		        transition: border-color .25s ease, color .25s ease;
+
+		&:hover{
+			border-color: @color__primary;
+			color: @color__primary;
+		}
+	}
+}

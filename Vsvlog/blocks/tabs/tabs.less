@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Block: Tabs
+   Dependencies: no dependencies
+   Docs: no link to documentation
+   ========================================================================== */
+
+.tabs{
+
+	&__header{
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		padding: 15px 0;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	&__title{
+		position: relative;
+		padding-right: 35px;
+		margin-right: 26px;
+		display: inline-block;
+		font-size: 14px;
+		vertical-align: top;
+
+		&:last-child{
+			margin: 0;
+			padding: 0;
+		}
+
+		&:after{
+			position: absolute;
+			display: block;
+			content: '/';
+			font-size: 13px;
+			color: @color__black;
+			top: 0;
+			right: 0;
+		}
+
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	&__link{
+		color: @color__black;
+		.transition(color);
+
+		.tab__title--active &{
+			color: @color__primary;
+		}
+	}
+
+	&__content{
+		padding: 30px 0;
+	}
+
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.tabs{
+		&__header{
+			margin-bottom: 0;
+		}
+
+		&__title{
+			margin: 0;
+			padding: 0;
+			display: block;
+			line-height: 2.5;
+
+			&:after{
+				display: none;
+			}
+		}
+	}
+}

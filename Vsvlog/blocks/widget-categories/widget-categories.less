@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Block: Widget Categories
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.widget-categories{
+
+	&:after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	&__item{
+		width: 100%;
+		float: left;
+		letter-spacing: 0.04em;
+	}
+	
+	&__link{
+		display: block;
+		color: @color__black;
+		padding: 10px 0;
+		// text-transform: uppercase;
+		.transition-color();
+
+		li:first-child &{
+			padding-top: 0;
+		}
+
+		&:hover{
+			color: @color__primary;
+		}
+	}
+}

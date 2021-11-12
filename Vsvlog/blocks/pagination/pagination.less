@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Block: Pagination
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.pagination{
+	
+	&--border-top{
+		border-top: 1px solid #000000;
+		padding-top: 45px;
+		margin-top: 15px;
+	}
+
+	&--border-bottom{
+		border-bottom: 1px solid #000000;
+		padding-bottom: 45px;
+	}
+
+	&__nav{
+		font-size: 14px;
+		letter-spacing: 0.5em;
+		color: @color__black;
+		text-transform: uppercase;
+		.transition(color);
+
+		&:hover{
+			color: @color__primary;
+		}
+	}
+
+	&__number{
+		font-size: 14px;
+		line-height: 1;
+		letter-spacing: 0.5em;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: @font__regular;
+	}
+}

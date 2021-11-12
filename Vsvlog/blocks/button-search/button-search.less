@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Block: Button Search
+   Dependencies: Simple Line Icons
+   Docs: https://github.com/thesabbir/simple-line-icons
+   ========================================================================== */
+
+.button-search{
+	cursor: pointer;
+	position: relative;
+	.transition-transform();
+
+	&--open{
+		.translateY(122px);
+	}
+
+	&__icon{
+		font-size: 17px;
+		display: block;
+		.transition(opacity);
+
+		.button-search--open &{
+			opacity: 0;
+		}
+
+		&--close{
+			&:extend(.button-search__icon);
+			font-size: 20px;
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+
+			.button-search--open & {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.button-search{
+		.translateY(0);
+
+		&__icon{
+			&--close{
+				top: 3px;
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+/* Color */
+.feature-box .read-more a:hover, 
+.feature-box:hover a,
+.fact-number .factor,
+.infograph-section ul li i,
+.contact .btn:hover,
+.tab-content i,
+.blog-outer .span-inner,
+.blog-outer .blog-status .read-more,
+.blog-outer .blog-status .social-title,
+.sidebar-social li a:hover,
+.blog-outer .sidebar-facebook h4,
+.blog-outer .archives a:hover,
+.blog-outer .categories li:hover a,
+.blog-outer .tags li:hover a,
+.shortcodes .nav-tabs > li.active > a, .shortcodes .nav-tabs > li.active > a:hover, .shortcodes .nav-tabs > li.active > a:focus,
+.shortcodes .testimonial .testimonial-inner .testimonial-content:after,
+.shortcodes .testimonial .testimonial2-inner .testimonial-content:after,
+.shortcodes .short-code .accordion-toggle:before ,
+.shortcodes .short-code .accordion-toggle.collapsed:before,
+.shortcodes .piechart span{
+	color:#5e6f80;
+}
+/* Background Color */
+.sticky-wrapper.is-sticky .sticky-navigation,
+#top-section .collapse.in, 
+#header-top #sticky-section-sticky-wrapper,
+#header-top #sticky-section,
+#navigation .dropdown-menu,
+.home-slider .slide-item ,
+.product-more:hover,
+.pricing-more,
+.infograph-section .btn,
+.blog .btn:hover,
+.contact .btn,
+.footer-social-icon i:hover,
+.footer .btn-default,
+.team .social-icon i:hover,
+.filter-menu ul li:hover, 
+.filter-menu ul li.active,
+.blog-outer .blog-social i:hover,
+.blog-single .btn:hover,
+.twitter-feed,
+.twitter-feed i,
+.faq .left-part .faq-panel .accordion-toggle:before,
+.faq #accordion1 .panel-body,  
+.shortcodes #accordion1 .panel-body,
+.shortcodes .testimonial .testimonial-inner .testimonial-content:hover,
+.shortcodes .testimonial .testimonial2-inner .testimonial-content:hover,
+.shortcodes .testimonial3-inner .carousel-indicators li.active,
+.shortcodes .carousel .carousel-content a,
+.pagination ul li a, 
+.pagination ul li span{
+	background-color: #5e6f80;
+}
+
+/* Border Color */
+.pricing-more,
+.faq .panel-group .panel,
+.shortcodes .carousel-indicators li,
+.comment-reply,
+blockquote,
+.blog-outer .tags li{
+	border-color:#5e6f80;
+}
+.shortcodes .nav-tabs > li.active > a:focus,
+.shortcodes .nav-tabs > li.active > a{
+	border-top-color:#5e6f80;
+}
+.shortcodes .testimonial .testimonial-inner .testimonial-content,
+.shortcodes .testimonial .testimonial-inner .testimonial-content:hover,
+.shortcodes .testimonial .testimonial2-inner .testimonial-content,
+.shortcodes .testimonial .testimonial2-inner .testimonial-content:hover {
+	border-bottom-color:#5e6f80;
+}

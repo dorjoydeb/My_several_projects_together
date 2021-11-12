@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Block: Widget Instagram
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.widget-instagram{
+
+	&:after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	&__item{
+		width: 30%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+		float: left;
+
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+
+		&:nth-last-child(-n+3){
+			margin-bottom: 0;
+		}
+	}
+
+	&__image{
+
+	}
+}

@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Block: Menu
+   Dependencies: jquery.superfish.less
+   Docs: https://github.com/joeldbirch/superfish
+   ========================================================================== */
+
+.menu{
+	&--center{
+		text-align: center;
+	}
+
+	&--right{
+		text-align: right;
+	}
+
+	&--mobile{
+		position: absolute;
+		top: 50%;
+		.translateY(-50%);
+		width: 100%;
+	}
+
+
+	&__child{
+		font-family: @font__secondary;
+		background-color: #fff;
+		width: 175px;
+		padding: 20px 0;
+		-webkit-box-shadow: 0px 17px 31px 0px rgba(0,0,0,0.25);
+		box-shadow: 0px 17px 31px 0px rgba(0,0,0,0.25);
+		text-align: left;
+		
+		// Overriding the SuperFish styles
+		.sf-menu &{
+			left: 50%;
+			transform: translateX(-50%);
+			top: 40px;
+		}
+
+		.menu__child &{
+			top: -20px;
+		    left: 100%;
+		    transform: none;
+		}
+
+		.menu--mobile &{
+			box-shadow: none;
+			width: auto;
+			padding: 0;
+			background: transparent;
+		}
+	}
+
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 25px;
+
+		// Overriding the SuperFish styles
+		.menu > & {
+			float: none;
+		}
+
+		.menu__child &{
+			display: block;
+			padding: 0 30px;
+		}
+
+		.menu--mobile &{
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__link{
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.13em;
+		display: block;
+		color: @color__black;
+		.transition(color);
+
+		&.sf-with-ul:after{
+			content: "+";
+			margin-left: 5px;
+			font-size: 15px;
+			font-weight: @font__light;
+		}
+
+		// Nested
+		.menu__child &{
+			font-family: @font__secondary;
+			font-size: 11px;
+			font-style: italic;
+			line-height: 15px;
+			letter-spacing: 0.13em;
+			padding: 6px 0;
+			color: @color__black;
+			.transition(color);
+
+			&:after{
+				content: '';
+			}
+
+			&:before{
+				display: block;
+				content: '';
+				position: absolute;
+				top: 13px;
+				width: 0;
+				height: 1px;
+				background-color: @color__primary;
+				left: -30px;
+				.transition(width);
+			}
+
+			.menu--mobile &{
+				padding: 0;
+			}
+		}
+
+		.menu__item.sfHover > &{
+			color: @color__primary;
+		}
+
+		.menu--mobile &{
+			line-height: 40px;
+		}
+
+		// Hover State
+		&:hover{
+			text-decoration: none;
+			color: @color__primary;
+		}
+
+		// Hover State Nested
+		.menu__child &:hover{
+			color: @color__primary;
+			&:before{ width: 15px; }
+		}
+
+		// Active State
+		.menu__item--active > &{
+			color: @color__primary;
+		}
+
+		// Active State Nasted
+		.menu__child .menu__item--active &{
+			color: @color__primary;
+			position: relative;
+
+			&:before{
+				display: block;
+				content: '';
+				position: absolute;
+				top: 13px;
+				width: 15px;
+				height: 1px;
+				background-color: @color__primary;
+				left: -30px;
+			}
+
+			.menu--mobile &:before{
+				display: none;
+			}
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-large-x) {
+	.menu__item{
+		padding: 0 15px;
+	}
+}

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Block: Widget Contact
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.widget-contact{
+
+	&__image{
+		margin-bottom: 30px;
+	}
+
+	&__name{
+		font-size: 14px;
+		font-weight: @font__bold;
+		letter-spacing: 0.14em;
+		margin-bottom: 9px;
+		line-height: 16px;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.widget-contact{
+		&__name{
+			text-align: center;
+		}
+	}
+}

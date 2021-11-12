@@ -1,0 +1,68 @@
+/* Color */
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus, .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+.services-learn-more:hover,
+.btn-cyan:hover ,
+#blog .blog-container h6 a, 
+.blog-attr a,
+.sidebar .categories li a:hover, .sidebar .recent-posts li a:hover, .sidebar .recent-posts .date,
+.sidebar .archives li a:hover, .sidebar .about-us span,
+.sidebar .twitter-feed .tweet_user a, .sidebar .tweet_text a, .sidebar .tweet_time a,
+#blog-outer .blog-container h5 a,
+#faq .panel-default > .panel-heading, #shortcodes .accordion-after .panel-default > .panel-heading,
+.shortcodes .accordion-before .panel-default .panel-heading,
+.shortcodes .tabs .nav-tabs a,
+.shortcodes .tabs .nav-tabs > li.active > a,
+.fun-factors .factor,
+#contacInfo i, #contacInfo h5,
+.span-color,
+.services-learn-more i,
+.sidebar .categories li i,
+#blog-outer .blog-single .share-post h5,
+#blog-outer .blog-single .author h5,
+#blog-outer .blog-single .comments i,
+#blog-outer .blog-single .comment-wrap .name,
+#blog-outer .blog-single .comment-wrap .reply-btn,
+#blog-outer .blog-single blockquote i{
+	color:#1abc9c !important;
+}
+
+/* Background Color */
+.timeline-title span,
+.blog-timeline-event-left:before ,
+.blog-timeline-event-right:before,
+#faq .panel-heading .accordion-toggle .panel-heading, #shortcodes .accordion-after .panel-heading .accordion-toggle .panel-heading,
+#faq .accordion-toggle:after, #shortcodes .accordion-after .accordion-toggle:after,
+.shortcodes .accordion-before .faq-panel .accordion-toggle:before,
+.shortcodes .accordion-before .panel-title a i,
+.shortcodes .tabs .nav-tabs > li.active > a:after ,
+.shortcodes .no-color,
+.shortcodes .testimonial3-inner .carousel-indicators li,
+#copyright,
+.devider-round-in-sea-green,
+.devider-line-h-sea-green,
+#contact form input.btn-msg,
+.sidebar .input-group-addon,
+.flex-direction-nav-on-top .flex-prev:before, 
+.flex-direction-nav-on-top .flex-next:before,
+.short-tooltip button,
+.carousel-slider .btn,
+.fun-factors .funfact-container,
+/* V1 */
+.slider-wrapper{
+	background-color: #1abc9c !important;
+}
+
+/* Border Color */
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus, .navbar-default .navbar-nav > .active > a,
+.navbar .navbar-collapse,
+#contact form input.input-text,
+#contact form textarea.text-area, 
+.blog-container a:hover,
+.sidebar .input-group-addon,
+.sidebar .tags li,
+#blog-outer .blog-single blockquote,
+.devider-round-out-sea-green,
+#contact form input.btn-msg {
+	border-color:#1abc9c !important;
+}

@@ -1,0 +1,181 @@
+#theme-panel {
+    position: fixed;
+    width: 170px;
+    height: auto;
+    top: 150px;
+    min-height: 200px;
+    text-align: left;
+    background: white;
+    border: 1px solid #CCC;
+    z-index: 999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.close-theme-panel {
+    left: -170px;
+}
+.open-theme-panel {
+    left: -1px;
+}
+#theme-panel .segment {
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 18px 12px;
+}
+#theme-panel .segment h4{
+	font-family: 'Open Sans' !important;
+	font-size:15px;
+	text-transform:uppercase;
+	font-weight:700;
+}
+#theme-panel a.panel-button {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: white;
+    color: #34495e;
+    right: -45px;
+    top: 24px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 44px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+	border-left:hidden;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#theme-panel h3 {
+    margin: 3px auto 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#theme-panel .segment a.switcher {
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: 5px 0 0 1px;
+    width: 30px;
+	position:relative;
+	border-radius:50px;
+}
+/* Theme Panel Devider Round */
+#theme-panel .devider {
+    margin: 16px auto;
+    width: 14px;
+}
+#theme-panel .devider-round-in {
+    height: 10px;
+    margin: 3px 0 0 3px;
+    width: 10px;
+}
+#theme-panel .devider-round-out {
+    height: 22px;
+    margin: -12px -4px;
+    width: 22px;
+}
+#theme-panel .devider-round-out-green, 
+#theme-panel .devider-round-out-blue-bg,
+#theme-panel .devider-round-out-orange-bg,
+#theme-panel .devider-round-out-purple-bg,
+#theme-panel .devider-round-out-red-bg,
+#theme-panel .devider-round-out-s-green-bg,
+#theme-panel .devider-round-out-s-blue-bg,
+#theme-panel .devider-round-out-p-green-bg{
+    border: 2px solid #FFFFFF !important;
+}
+
+/* Green */
+#theme-panel .devider-round-out-green{
+	background:#FFFFFF;
+	border: 3px solid #1abc9c  !important;
+}
+#theme-panel .devider-round-in-green {
+    background: #1abc9c ;
+}
+/* Blue Bg */
+#theme-panel .devider-round-out-blue-bg{
+	background:#FFFFFF;
+	border: 3px solid #5cace2 !important;
+}
+#theme-panel .devider-round-in-blue-bg {
+    background: #5cace2;
+}
+/* Orange Bg */
+#theme-panel .devider-round-out-orange-bg{
+	background:#FFFFFF;
+	border: 3px solid #FC8F1A !important;
+}
+#theme-panel .devider-round-in-orange-bg {
+    background: #FC8F1A;
+}
+/* Purple Bg */
+#theme-panel .devider-round-out-purple-bg{
+	background:#FFFFFF;
+	border: 3px solid #9b59b6 !important;
+}
+#theme-panel .devider-round-in-purple-bg {
+    background: #9b59b6;
+}
+/* Red Bg */
+#theme-panel .devider-round-out-red-bg{
+	background:#FFFFFF;
+	border: 3px solid #e74c3c !important;
+}
+#theme-panel .devider-round-in-red-bg {
+    background: #e74c3c;
+}
+/* S-Green Bg */
+#theme-panel .devider-round-out-s-green-bg{
+	background:#FFFFFF;
+	border: 3px solid #90c963 !important;
+}
+#theme-panel .devider-round-in-s-green-bg {
+    background: #90c963;
+}
+/* S-Blue Bg */
+#theme-panel .devider-round-out-s-blue-bg{
+	background:#FFFFFF;
+	border: 3px solid #1ed2ff !important;
+}
+#theme-panel .devider-round-in-s-blue-bg {
+    background: #1ed2ff;
+}
+/* P-Green Bg */
+#theme-panel .devider-round-out-p-green-bg{
+	background:#FFFFFF;
+	border: 3px solid #2ecc71 !important;
+}
+#theme-panel .devider-round-in-p-green-bg {
+    background: #2ecc71;
+}
+
+
+/* Color Panel Colors */
+.green-bg {
+    background: #1abc9c;
+}
+.blue-bg{
+    background: #5cace2;
+}
+.orange-bg {
+    background: #FC8F1A;
+}
+.purple-bg {
+    background: #9b59b6;
+}
+.red-bg {
+    background: #e74c3c;
+}
+.s-green-bg {
+    background: #90c963;
+}
+.p-green-bg {
+    background: #2ecc71;
+}
+.s-blue-bg {
+    background: #1ed2ff;
+}

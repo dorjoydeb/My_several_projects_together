@@ -1,0 +1,17 @@
+/* ==========================================================================
+   YouTubePopUp plugin override
+   ========================================================================== */
+div.YouTubePopUp-Content{
+	max-width: 850px;
+}
+
+span.YouTubePopUp-Close{
+	background: none;
+	.transition(opacity);
+	
+	&:before{
+		content: "✕";
+		color: white;
+		font-size: 27px;
+	}
+}

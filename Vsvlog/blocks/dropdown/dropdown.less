@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Block: Dropdown
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.dropdown{
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+	min-width: 200px;
+	text-align: left;
+	position: relative;
+	font-size: 11px;
+	font-style: italic;
+	font-family: @font__secondary;
+	color: @color__black;
+	letter-spacing: 0.14em;
+
+	&--full{
+		display: block;
+	}
+
+	&__label{
+		border: 1px solid @color__grey--light;
+		padding: 15px;
+		cursor: pointer;
+		position: relative;
+
+		&:after{
+			content: "\e604";
+			font-family: @icon__primary;
+			position: absolute;
+			font-style: normal;
+			right: 15px;
+			top: 17px;
+			.transition(opacity);
+
+			.dropdown:hover &{
+				opacity: 0;
+			}
+		}
+	}
+
+	&__list{
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 100%;
+		margin-top: -1px;
+		background-color: white;
+		border: 1px solid @color__grey--light;
+		z-index: 15;
+		opacity: 0;
+		.transition(opacity);
+
+		.dropdown:hover &{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+
+	&__item{
+		padding: 15px;
+		cursor: pointer;
+		.transition(color);
+
+		&:hover{
+			color: @color__primary;
+		}
+
+		&--active{
+			color: @color__primary;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.dropdown{
+		display: block;
+		margin-bottom: 15px;
+	}
+}

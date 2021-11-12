@@ -1,0 +1,89 @@
+.transition(@property){
+	-webkit-transition: @property .25s ease;
+	   -moz-transition: @property .25s ease;
+	    -ms-transition: @property .25s ease;
+	     -o-transition: @property .25s ease;
+	        transition: @property .25s ease;
+}
+
+.transition-color(){
+	.transition(color);
+}
+
+.transition-custom(...){
+	@values: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+	-webkit-transition: @values;
+	   -moz-transition: @values;
+	    -ms-transition: @values;
+	     -o-transition: @values;
+	        transition: @values;
+}
+
+.placeholder(@rules) {
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
+
+.translate(@x, @y){
+	-webkit-transform: translateX(@x), translateY(@y);
+	   -moz-transform: translateX(@x), translateY(@y);
+	    -ms-transform: translateX(@x), translateY(@y);
+	     -o-transform: translateX(@x), translateY(@y);
+	        transform: translateX(@x), translateY(@y);
+}
+
+.transform-origin(@x, @y){
+	-webkit-transform-origin: @x @y;
+	   -moz-transform-origin: @x @y;
+	    -ms-transform-origin: @x @y;
+	     -o-transform-origin: @x @y;
+	        transform-origin: @x @y;
+}
+
+.translateX(@value){
+	-webkit-transform: translateX(@value);
+	   -moz-transform: translateX(@value);
+	    -ms-transform: translateX(@value);
+	     -o-transform: translateX(@value);
+	        transform: translateX(@value);
+}
+
+.translateY(@value){
+	-webkit-transform: translateY(@value);
+	   -moz-transform: translateY(@value);
+	    -ms-transform: translateY(@value);
+	     -o-transform: translateY(@value);
+	        transform: translateY(@value);
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	   -moz-animation: @arguments;
+	    -ms-animation: @arguments;
+	     -o-animation: @arguments;
+	        animation: @arguments;
+}
+
+.transform(@value){
+	-webkit-transform: @value;
+	   -moz-transform: @value;
+	    -ms-transform: @value;
+	     -o-transform: @value;
+	        transform: @value;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}

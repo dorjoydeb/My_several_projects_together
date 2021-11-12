@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Block: List
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.list{
+
+	&--right{
+		text-align: right;
+	}
+
+	&--meta{
+		padding-bottom: 30px;
+		border-bottom: 1px solid @color__black;
+	}
+
+	&__item{
+		display: block;
+
+		.list--horizontal &{
+			display: inline-block;
+			vertical-align: top;
+
+			&:last-child{
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.list--buttons &{
+			margin-right: 40px;
+
+			&:last-child{
+				margin: 0;
+			}
+		}
+
+		.list--header &{
+			margin-left: 20px;
+
+			&:first-child{
+				margin: 0;
+			}
+
+			&:last-child{
+				margin-left: 20px;
+			}
+		}
+
+		// List separator
+		.list--separator &{
+			position: relative;
+			padding-right: 35px;
+			margin-right: 26px;
+
+			&:after{
+				position: absolute;
+				display: block;
+				content: '/';
+				font-size: 14px;
+				color: @color__black;
+				top: 0;
+				right: 0;
+			}
+
+			&:last-child{
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__link{
+		font-size: 14px;
+		color: @color__black;
+		letter-spacing: 0.14em;
+		.transition(color);
+
+		&:hover{
+			color: @color__primary;
+		}
+
+		&--active{
+			color: @color__primary;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.list{
+		&--category{
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		&--buttons{
+			.list__item{
+				margin-right: 30px;
+			}
+		}
+
+		&--meta{
+			.list__item{
+				padding-right: 0;
+				line-height: 2;
+
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.list{
+
+		&--buttons{
+			text-align: center;
+
+			.list__item{
+				margin-right: 20px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.list{
+		
+		&--features{
+			&:after{
+				clear: both;
+				display: block;
+				content: '';
+			}
+
+			.list__item{
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+}

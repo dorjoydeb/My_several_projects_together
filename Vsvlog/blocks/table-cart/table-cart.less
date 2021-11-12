@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Block: Table Cart
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.table-cart{
+	width: 100%;
+	border-bottom: 1px solid @color__grey--light;
+	padding-bottom: 30px;
+
+	th{
+		border-bottom: 1px solid @color__grey--light;
+		padding-bottom: 20px;
+		font-weight: @font__regular;
+		letter-spacing: 0.14em;
+	}
+
+	td{
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	&__head-product{
+		width: 50%;
+	}
+
+	&__price{
+		line-height: 35px;
+		font-size: 18px;
+		margin: 0;
+	}
+
+	&__product{
+		text-align: left;
+		&:after{
+			display: block;
+			clear: both;
+			content: '';
+		}
+	}
+
+	&__image{
+		float: left;
+		max-width: 100px;
+		margin-right: 20px;
+	}
+
+	&__title{
+		color: @color__black;
+		font-weight: @font__bold;
+		line-height: 22px;
+		letter-spacing: 0.08em;
+		display: inline-block;
+		vertical-align: top;	
+		margin-top: 15px;
+		margin-bottom: 15px;
+		.transition-color();
+
+		&:hover{
+			color: @color__primary;
+		}
+	}
+
+	&__price{
+		margin: 0;
+		letter-spacing: 0.08em;
+		font-weight: @font__regular;
+	}
+
+	&__remove{
+		color: @color__black;
+		font-size: 16px;
+	}
+}
+
+.media-mixin(@break) when (@break = @break-large-x) {
+	
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.table-cart{
+		&:after{
+			display: block;
+			clear: both;
+			content: '';
+		}
+
+		thead{
+			display: none;
+		}
+
+		tr{
+			display: block;
+			width: 50%;
+			float: left;
+			padding: 020px;
+		}
+
+		td{
+			padding-top: 0;
+			padding-bottom: 20px;
+			display: block;
+		}
+
+		&__link{
+			text-align: center;
+			padding-bottom: 15px;
+			display: block;
+		}
+
+		&__title{
+			text-align: center;
+			display: block;
+			float: none;
+		}
+
+		&__price{
+			text-align: center;
+		}
+
+		&__image{
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			float: none;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small-x) {
+	.table-cart{
+		tr{
+			width: 100%;
+			float: none;
+		}
+	}
+}

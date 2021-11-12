@@ -1,0 +1,499 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Master.PB - Post Full Width</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/slippry.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic,latin-ext" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- *****************************************************************
+    ** Preloader *********************************************************
+    ****************************************************************** -->
+
+	<div id="preloader-container">
+    	<div id="preloader-wrap">
+    		<div id="preloader"></div>
+    	</div>
+    </div>
+
+    
+    <!-- *****************************************************************
+    ** Header ************************************************************ 
+    ****************************************************************** --> 
+
+    <header>
+    
+    	<!-- MENU DESKTOP -->
+            <nav class="menu-desktop menu-sticky">
+        		<div class="masterpb-container">
+                    <ul class="masterpb-menu col-xs-8">
+                             <li><a href="#">HOME <i class="icon-arrow-down8"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="home-1-column.html">Home 1 Column</a></li>
+                                    <li><a href="index.html" class="active">Home 1 Column + Sidebar</a></li>                            
+                                    <li><a href="home-2-columns-with-sidebar.html">Home 2 Columns + Sidebar</a></li>
+                                    <li><a href="home-2-columns.html">Home 2 Columns</a></li>
+                                    <li><a href="home-3-columns.html">Home 3 Columns</a></li>   
+                                </ul>
+                            </li>
+                            <li><a href="#" class="active">FEATURES <i class="icon-arrow-down8"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="page.html">Page</a></li>
+                                    <li><a href="page-with-right-sidebar.html">Page + Right Sidebar</a></li>
+                                    <li><a href="page-with-left-sidebar.html">Page + Left Sidebar</a></li>                            
+                                    <li><a href="post.html">Post Full Width</a></li>
+                                    <li><a href="post-with-right-sidebar.html">Post + Right Sidebar</a></li>
+                                    <li><a href="post-with-left-sidebar.html">Post + Left Sidebar</a></li>
+                                    <li><a href="#">Submenu <i class="icon-arrow-right8"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Item 1</a></li>
+                                            <li><a href="#">Item 2</a></li>
+                                            <li><a href="#">Item 3</a></li>
+                                            <li><a href="#">Item 4</a></li>
+                                        </ul>
+                                    </li>                                                                                            
+                                </ul>                
+                            </li>                                     
+                            <li><a href="#">BLOG <i class="icon-arrow-down8"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="blog-1-column.html">Blog 1 Column</a></li>
+                                    <li><a href="blog-1-column-with-sidebar.html">Blog + Sidebar</a></li>                            
+                                    <li><a href="blog-2-columns-with-sidebar.html">Blog 2 Columns + Sidebar</a></li>
+                                    <li><a href="blog-2-columns.html">Blog 2 Columns</a></li>
+                                    <li><a href="blog-3-columns.html">Blog 3 Columns</a></li>                                                                      
+                                </ul>                
+                            </li> 
+                            <li><a href="about-us.html">ABOUT US</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                    
+                    
+                    <div class="masterpb-social col-xs-4">
+                        <a href="#"><i class="icon-facebook5"></i></a>
+                        <a href="#"><i class="icon-twitter4"></i></a>
+                        <a href="#"><i class="icon-google-plus"></i></a>
+                    </div>                   
+            	</div><!-- masterpb-container -->
+            </nav>
+            
+            
+            <!-- MENU MOBILE -->  
+            <div class="menu-responsive-container"> 
+                <div class="open-menu-responsive">|||</div> 
+                <div class="close-menu-responsive">|</div>              
+                <div class="menu-responsive">   
+                    <ul class="masterpb-menu">
+                         <li><a href="#" class="active">HOME <i class="icon-arrow-down8"></i></a>
+                            <ul class="submenu">
+                                <li><a href="home-1-column.html">Home 1 Column</a></li>
+                                <li><a href="index.html" class="active">Home 1 Column + Sidebar</a></li>                            
+                                <li><a href="home-2-columns-with-sidebar.html">Home 2 Columns + Sidebar</a></li>
+                                <li><a href="home-2-columns.html">Home 2 Columns</a></li>
+                                <li><a href="home-3-columns.html">Home 3 Columns</a></li>                                                                      
+                            </ul>
+                        </li>
+                        <li><a href="#">FEATURES <i class="icon-arrow-down8"></i></a>
+                            <ul class="submenu">
+                                <li><a href="page.html">Page</a></li>
+                                <li><a href="page-with-right-sidebar.html">Page + Right Sidebar</a></li>
+                                <li><a href="page-with-left-sidebar.html">Page + Left Sidebar</a></li>                            
+                                <li><a href="post.html">Post Full Width</a></li>
+                                <li><a href="post-with-right-sidebar.html">Post + Right Sidebar</a></li>
+                                <li><a href="post-with-left-sidebar.html">Post + Left Sidebar</a></li>
+                                <li><a href="no-sticky.html">No Sticky Menu</a></li>
+                                <li><a href="no-slider.html">No Slider</a></li> 
+                                <li><a href="#">Submenu <i class="icon-arrow-right8"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                    </ul>
+                                </li>                                                                                            
+                            </ul>                
+                        </li>                                     
+                        <li><a href="#">BLOG <i class="icon-arrow-down8"></i></a>
+                            <ul class="submenu">
+                                <li><a href="blog-1-column.html">Blog 1 Column</a></li>
+                                <li><a href="blog-1-column-with-sidebar.html">Blog + Sidebar</a></li>                            
+                                <li><a href="blog-2-columns-with-sidebar.html">Blog 2 Columns + Sidebar</a></li>
+                                <li><a href="blog-2-columns.html">Blog 2 Columns</a></li>
+                                <li><a href="blog-3-columns.html">Blog 3 Columns</a></li>                                                                      
+                            </ul>                
+                        </li> 
+                        <li><a href="about-us.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>                        
+                </div>
+            </div> <!-- # menu responsive container -->
+            
+            
+            
+            <!-- LOGO & SEARCH  -->           
+            <div class="box-logo">
+            
+                <!-- LOGO -->
+                <div class="masterpb-container">   
+                	<div class="logo-container col-xs-8">
+                		<a href="index.html"><img src="img/logo.png" alt="logo" ></a>
+                	</div>
+                
+                <!-- SEARCH -->
+                <div class="masterpb-search col-xs-4">
+                    <form>
+                        <div class="form-group-search">
+                            <input type="search" class="search-field">
+                            <button type="submit" class="search-btn"><i class="icon-search4"></i></button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div> <!-- #masterpb-container -->
+         </div> <!-- #box-logo -->    
+                
+    </header><!-- #HEADER -->            
+    
+    
+    <!-- *****************************************************************
+    ** Section ***********************************************************
+    ****************************************************************** -->
+    
+	<section class="masterpb-container content-posts">
+    
+    	<!-- INSTAGRAM -->    
+    	<div class="widget widget-gallery">
+        	<div class="box-widget-title">
+            	<div class="box-position">
+                    <div class="line-title"></div>
+                    <h3>
+                        <a class="widget-title" href="#">INSTAGRAM</a>
+                    </h3>
+            	</div>
+            </div>
+    		<div class="image">
+            	<a href="#"><img src="img/instagram/img-instagram-1.jpg" alt="image gallery 1"></a>
+                <a href="#"><img src="img/instagram/img-instagram-2.jpg" alt="image gallery 2"></a>
+                <a href="#"><img src="img/instagram/img-instagram-3.jpg" alt="image gallery 3"></a>
+                <a href="#"><img src="img/instagram/img-instagram-4.jpg" alt="image gallery 4"></a>
+                <a href="#"><img src="img/instagram/img-instagram-5.jpg" alt="image gallery 5"></a>
+                <a href="#"><img src="img/instagram/img-instagram-6.jpg" alt="image gallery 6"></a>
+            </div>
+            <div class="clearfix"></div>
+    	</div>
+    
+    
+    	<!-- CONTENT -->
+    	<div class="content post-full-width col-xs-12">
+        
+        <div class="container-post">
+        
+        	<!-- ARTICLE 1 -->       
+        	<article>
+            	<h2><a href="#">MAECENAS CONSECTETUR</a></h2>
+            	<div class="post-image">
+                	<img src="img/img_post_full_width/img_big.jpg" alt="post image 1">
+                </div>
+                <div class="box-data-info">
+                	<span class="date info">07 JUNE 2016 - IMG - STYLE</span>
+                </div>
+                <div class="post-text">
+                    <p class="text">Sed ut massa tristique, vehicula tellus in, fringilla ligula. Phasellus dignissim est sed egestas fringilla. Vivamus egestas nec dolor vitae egestas. Nulla a ante odio. Vestibulum lobortis tincidunt nulla non varius. Fusce ornare, ante nec ullamcorper scelerisque, nisl erat sollicitudin lacus, ac sodales ligula sem eu risus. Fusce laoreet interdum eros, nec finibus mi rutrum eu.<br>
+                    <br>
+Nulla at sem in nisi pulvinar porta consequat a quam. Proin vehicula placerat est, vulputate dapibus elit scelerisque sit amet. Sed at condimentum justo, accumsan molestie ligula. Phasellus porttitor urna sit amet lorem rutrum luctus ut molestie nulla. Nulla facilisi. Pellentesque quis nibh ut arcu bibendum tincidunt.</p>
+ 
+					<div class="gallery">
+                    	<div class="item-gallery-left">
+                        	<img src="img/img_post_full_width/img-plus-1.jpg">
+                            <img src="img/img_post_full_width/img-plus-2.jpg">
+                        </div>
+                        <div class="item-gallery-center">
+                        	<img src="img/img_post_full_width/img-plus-big.jpg">
+                        </div>	
+                        <div class="item-gallery-right">    
+                            <img src="img/img_post_full_width/img-plus-3.jpg">
+                            <img src="img/img_post_full_width/img-plus-4.jpg">
+                    	</div>	
+                            <div class="clearfix"></div> 
+                    </div>
+                    
+                    <div class="box-text">
+                    	<p class="text first-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="text second-text">Integer lorem quam, interdum id nulla vel, varius lacinia metus</p>
+                        <p class="text second-text">Nunc quis elit scelerisque, dapibus sem et, venenatis nunc</p>
+                        <p class="text third-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    
+                    <p class="text">Nullam tristique massa faucibus, sodales sapien ac, tincidunt dolor. Quisque ut lobortis lectus, non suscipit ante. Duis lectus metus, consequat vitae ante et, ullamcorper scelerisque nisl.<br>
+Nullam tristique massa faucibus, sodales sapien ac, tincidunt dolor. Quisque ut lobortis lectus, non suscipit ante. Phasellus et aliquet velit. Donec in dui vitae tellus sodales dapibus non quis libero. Quisque nec tortor ac ligula sagittis rutrum in a felis.</p>
+
+					<quote class="text">“ Vestibulum at justo ante. Fusce finibus pretium aliquam. Sed pharetra purus at augue faucibus sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. ”</quote>
+                    
+                    <p class="text">Quisque euismod sapien vel neque tincidunt vulputate. Duis nulla elit, mollis eu fringilla euinterdum vel libero. Phasellus quis felis tempor, vulputate juquis, ullamcorper nisi.</p>
+                    
+                    <div class="social-post">
+                        <a href="#"><i class="icon-facebook5"></i></a>
+                        <a href="#"><i class="icon-twitter4"></i></a>
+                        <a href="#"><i class="icon-google-plus"></i></a>
+                        <a href="#"><i class="icon-vimeo4"></i></a>
+                        <a href="#"><i class="icon-linkedin2"></i></a>                  
+                    </div>
+                                                  
+                </div>
+                
+            </article>
+            
+            <!-- NAVIGATION POST -->
+                <div class="navigation-post">
+                    <div class="prev-post">
+                        <img src="img/all-img/prev-post.jpg">
+                        <a href="#" class="prev">
+                             Previous Posts
+                            <span class="name-post">DUIS FACILISIS AUGUE VITAE</span>
+                            <i class="icon-arrow-left8"></i>
+                        </a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="next-post">                	
+                        <a href="#" class="next">
+                                Next Posts <i class="icon-arrow-right8"></i>                
+                                <span class="name-post">FINIBUS LACUSB UT ULTRICES</span>
+                        </a> 
+                        <img src="img/all-img/next-post.jpg">  
+                        <div class="clearfix"></div>             
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                
+                <!-- AUTHOR POST -->
+                <div class="author-post-container">
+                    <div class="author-post">
+                        <div class="author-image">
+                            <img src="img/all-img/img-author.jpg">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">LUCAS NEWAR</span>
+                            <span class="author-description text">Morbi gravida, sem non egestas ullamcorper, tellus ante laoreet nisl, id iaculis urna eros vel turpis curabitur tristique mauris eget lacus rutrum lobortis. Ut id elementum purus, sodales hendrerit turpis.</span>
+                            <span class="author-social">
+                                <a href="#"><i class="icon-facebook5"></i></a>
+                                <a href="#"><i class="icon-twitter4"></i></a>
+                                <a href="#"><i class="icon-google-plus"></i></a>           
+                            </span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                        
+                </div>
+                
+                
+                <!-- RELATED POSTS -->
+                <div class="related-posts">
+                        <h2>Related Article</h2>
+                        <div class="related-item-container">
+                        
+                        
+                        
+                        	<div class="container-post col-xs-4">
+                
+                                <!-- ARTICLE 1 -->       
+                                <article>
+                                    <h3><a href="#">TELLUS QUIS IPSUM</a></h3>
+                                    <div class="post-image">
+                                        <img src="img/post_2_columns+sidebar/img-post-7.jpg" alt="post image 1">
+                                    </div>
+                                    <div class="post-text">
+                                        <span class="date info">02 JUNE 2016 - TRAVEL</span>
+                                        <p class="text">Nam tincidunt dui vel nisi efficitur, eu venenatis orci dictum.</p>
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="post-by">Post By <a href="#">AD-Theme</a></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </article>
+                                
+                            </div>
+                            
+                            
+                            <div class="container-post col-xs-4">
+                
+                                <!-- ARTICLE 2 -->       
+                                <article>
+                                    <h3><a href="#">SED FINIBUS LACUS</a></h3>
+                                    <div class="post-image">
+                                        <img src="img/post_2_columns+sidebar/img-post-8.jpg" alt="post image 1">
+                                    </div>
+                                    <div class="post-text">
+                                        <span class="date info">02 JUNE 2016 - STYLE</span>
+                                        <p class="text">Nam tincidunt dui vel nisi efficitur, eu venenatis orci dictum.</p>
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="post-by">Post By <a href="#">AD-Theme</a></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </article>
+                                
+                            </div>
+                            
+                            
+                            <div class="container-post col-xs-4">
+                
+                                <!-- ARTICLE 3 -->       
+                                <article>
+                                    <h3><a href="#">CRAS IN NIBH NEC SAPIEN</a></h3>
+                                    <div class="post-image">
+                                        <img src="img/post_2_columns+sidebar/img-post-9.jpg" alt="post image 1">
+                                    </div>
+                                    <div class="post-text">
+                                        <span class="date info">01 JUNE 2016 - FOOD</span>
+                                        <p class="text">Nam tincidunt dui vel nisi efficitur, eu venenatis orci dictum.</p>
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="post-by">Post By <a href="#">AD-Theme</a></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </article>
+                                
+                            </div>
+                        
+                        	<div class="clearfix"></div>
+                        
+                        </div>
+                  </div>
+               
+        	 
+             
+             <!-- COMMENTS -->      
+                  <div class="comments">
+                            <h2>3 Comments</h2>
+                            <div class="comments-list">
+                                <div class="main-comment">
+                                    <div class="comment-image-author">
+                                        <img src="img/all-img/img-profile-1.jpg">
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="comment-name-date"><span class="comment-name">LUCAS NEWAR</span><span class="comment-date">June 2, 2016</span><div class="clearfix"></div></div>
+                                        <span class="comment-description">Morbi gravida, sem non egestas ullamcorper, tellus ante laoreet nisl, id iaculis urna eros vel turpis curabitur. Donec in dui vitae tellus sodales dapibus non quis libero. <i class="icon-arrow-right2"></i></span>                                
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="reply-comment">
+                                    <span class="reply-line"></span>
+                                    <div class="comment-image-author">
+                                        <img src="img/all-img/img-profile-2.jpg">
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="comment-name-date"><span class="comment-name">LUCAS NEWAR</span><span class="comment-date">June 2, 2016</span><div class="clearfix"></div></div>
+                                        <span class="comment-description">Morbi gravida, sem non egestas ullamcorper, tellus ante laoreet nisl, id iaculis urna eros vel turpis curabitur. Donec in dui vitae tellus sodales dapibus non quis libero.<i class="icon-arrow-right2"></i></span>                                
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+    
+                            <div class="comments-list">
+                                <div class="main-comment">
+                                    <div class="comment-image-author">
+                                        <img src="img/all-img/img-profile-1.jpg">
+                                    </div>
+                                    <div class="comment-info">
+                                        <div class="comment-name-date"><span class="comment-name">LUCAS NEWAR</span><span class="comment-date">June 2, 2016</span><div class="clearfix"></div></div>
+                                        <span class="comment-description">Morbi gravida, sem non egestas ullamcorper, tellus ante laoreet nisl, id iaculis urna eros vel turpis curabitur. Donec in dui vitae tellus sodales dapibus non quis libero. <i class="icon-arrow-right2"></i></span>                                
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        
+                </div>                                  
+                
+                
+                <!-- COMMENT FORM -->
+                <div class="comment-form">
+                    <h2>Leavy a Reply</h2>
+                    <span class="field-name">Your Name (required)</span>
+                    <input type="text" class="name">
+                    <span class="field-name">Your Name (required)</span>
+                    <input type="text" class="email">
+                    <span class="field-name">Your Message</span>
+                    <textarea class="message"></textarea>
+                    
+                    <button type="submit">Send Comment</button>
+                
+                </div>
+             
+             
+        </div><!-- POST-CONTAINER -->   
+   
+        
+        </div>
+        
+   		<div class="clearfix"></div>
+        
+        
+    </section>
+
+    
+    <!-- *****************************************************************
+    ** Footer ************************************************************
+    ****************************************************************** -->    
+    
+    <footer>
+        
+    	<!-- FOOTER TOP -->        
+        <div class="footer-top">
+        	<div class="masterpb-container">
+            	<div class="logo-footer">
+                	<a href="index.html"><img src="img/logo-footer.png" alt="logo" ></a>
+                </div>
+                <div class="subtitle-logo"><p class="color-text first">PERSONAL</p><p class="black-text">BLOG</p><p class="color-text">HTML</p><p class="black-text last">THEME</p></div>
+                <div class="box-social">
+                	<div class="conteiner-social">
+                        <a href="#"><i class="icon-facebook5"></i></a>
+                        <a href="#"><i class="icon-twitter4"></i></a>
+                        <a href="#"><i class="icon-google-plus"></i></a>
+                        <a href="#"><i class="icon-vimeo4"></i></a>
+                        <a href="#"><i class="icon-linkedin2"></i></a>
+                        <a href="#"><i class="icon-pinterest3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        
+        <!-- FOOTER BOTTOM -->        
+        <div class="footer-bottom">
+        	<div class="masterpb-container">
+                <span class="copyright">Theme Created by <a href="#">AD-Theme</a> Copyright © 2016. All Rights Reserved</span>
+                <span class="backtotop">TOP <i class="icon-arrow-up7"></i></span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+    </div>   
+              
+    </footer>
+    
+    
+    <!-- *****************************************************************
+    ** Script ************************************************************
+    ****************************************************************** -->	
+	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/slippry.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

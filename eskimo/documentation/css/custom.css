@@ -1,0 +1,191 @@
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding-top: 60px;
+}
+p {
+    font-size: 16px;
+}
+hr {
+    margin: 30px 0px;
+}
+.topmargin {
+    margin-top: 70px;
+}
+.elite-container {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.footer-credits {
+    margin-top:-18px;
+}
+.footer-credits .well {
+    margin-bottom:40px;
+    border-top:3px solid #fff;
+}
+#elitebadge {
+    position:absolute;
+    bottom:3px;
+    right: 0px;
+    z-index: 1;
+    width:110px;
+    height:auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border:5px solid #fff;
+}
+#elitebadge img{
+    width:100%;
+    height: auto;
+}
+.egemenerd-logo {
+    display:inline-block;
+}
+.egemenerd-logo img {
+    width:100%;
+    height: auto;
+    margin: 0px;
+    padding-left: 20px;
+}
+.egemenerd-code {
+    font-family:Menlo,Monaco,Consolas,"Courier New",monospace;
+    width: 100%;
+    height: auto;
+    background:#eee;
+    padding:20px;
+    border:none !important;
+    outline:none !important;
+}
+.gotop {
+    float: right;
+}
+.gotop img{
+    width: 12px;
+    height: auto;
+    vertical-align: bottom;
+    padding-bottom: 6px;
+}
+.navbar-default li {
+    font-weight:bold;
+}
+.navbar-brand {
+    font-size:16px;
+    font-weight:bold;
+}
+.navbar-nav li li a {
+    font-size:14px;
+}
+.egemenerd-social {
+    width:100%;
+}
+.egemenerd-social li a {
+    font-size:16px !important;
+    line-height:40px;
+}
+.egemenerd-menu-icon {
+    width:24px;
+    height:auto;
+    margin-right:10px;
+    margin-top: -1px;
+}
+.egemenerd-hero {
+    margin: 20px 0px 0px 0px;
+}
+.jumbotron-title {
+    margin-top:0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.jumbotron{
+    padding-top:90px;
+    padding-bottom:90px;
+}
+.well {
+    padding-bottom:5px;
+}
+.well.well-lg {
+    padding-bottom:10px;
+}
+.img-responsive {
+    margin:10px 0px 30px 0px;
+}
+dl .img-responsive {
+    margin:0px 0px 10px 0px;
+}
+.tab-pane {
+    padding-top:30px;
+}
+.nav-tabs {
+    margin-top:0px;
+}
+.nav-tabs li a {
+    font-size:22px;
+}
+#support .well-lg h4,#support .well-lg p.lead {
+    margin-bottom:15px;
+}
+.credits {
+    font-size:12px;
+    padding-left: 5px;
+}
+#footer {
+    margin-top:20px;
+    margin-bottom:0px;
+}
+@media only screen and (max-width: 1024px) {
+    #elitebadge {
+        bottom:-5px;
+        width:80px;
+    }
+    .jumbotron{
+        padding-top:40px;
+        padding-bottom:40px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .egemenerd-logo img {
+        padding-top:30px;
+        padding-left: 0px;
+        max-width:250px;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .btn-group,.btn-group-justified {
+        width:100% !important;
+        display:block !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body,p {
+        font-size:15px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 22px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Block: Widget
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.widget{
+	background-color: #f7f7f7;
+	margin-bottom: 30px;
+	padding: 20px;
+
+	&__title{
+		font-size: 14px;
+		font-weight: @font__regular;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		margin-bottom: 25px;
+		position: relative;
+		padding: 0px 0 20px 0;
+
+		&:after{
+			position: absolute;
+			content: "";
+			display: block;
+			width: 30px;
+			height: 2px;
+			background-color: @color__primary;
+			bottom: 0px;
+		}
+
+	}
+
+	&__content{
+		// padding-bottom: 40px;
+	}
+}

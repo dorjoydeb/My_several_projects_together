@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Block: Drawer
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.drawer{
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	.transition-transform();
+
+	&--search{
+		z-index: 5;
+		padding: 0 30px;
+		bottom: 0;
+
+		&.drawer--open{
+			.translateY(150px);
+			box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
+		}
+	}
+
+	&--tablet{
+		padding: 35px 30px;
+		z-index: 15;
+		top: 0;
+		text-align: center;
+		.translateY(-100%);
+		border-bottom: 1px solid @color__grey--light;
+
+		&.drawer--open{
+			.translateY(0);
+		}
+	}
+
+	&--mobile{
+		border-bottom: 1px solid @color__grey--light;
+		padding: 30px;
+		z-index: 20;
+		top: 0;
+		.translateY(-100%);
+
+		&.drawer--open{
+			.translateY(0);
+		}
+	}
+
+}

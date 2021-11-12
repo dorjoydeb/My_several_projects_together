@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Block: Input
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.input{
+	display: block;
+	width: 100%;
+	height: 45px;
+	line-height: 20px;
+	padding: 7px 40px 7px 15px;
+	border: 1px solid @color__grey--light;
+	outline: none;
+	font-size: 12px;
+	font-weight: @font__light;
+	border-radius: 0;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+	.transition(border-color);
+	.placeholder(
+		{
+			font-family: @font__secondary;
+			font-style: italic;
+			font-size: 11px;
+			letter-spacing: 0.14em;
+			color: @color__black;
+		}
+	);
+
+	&.error{
+		text-align: left;
+		color: rgb(185, 74, 72);
+	}
+
+	&:focus{
+		border-color: @color__black;
+	}
+
+	&__holder{
+		position: relative;
+	}
+
+	&__button{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 45px;
+		line-height: 45px;
+		font-size: 10px;
+		color: @color__black;
+		width: 40px;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		outline: none;
+	}
+}
+
+.help-block.form-error{
+	margin: 0px 0 20px 0;
+}

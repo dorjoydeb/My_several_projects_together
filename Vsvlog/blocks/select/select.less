@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Block: Select
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.select{
+	display: block;
+	width: 100%;
+	height: 45px;
+	line-height: 20px;
+	padding: 7px 40px 7px 15px;
+	border: 1px solid @color__grey--light;
+	border-radius: 0;
+	background-color: white;
+	outline: none;
+	font-weight: @font__light;
+	font-family: @font__secondary;
+	font-style: italic;
+	font-size: 10px;
+	letter-spacing: 0.14em;
+	color: @color__black;
+	position: relative;
+
+	&__holder{
+		position: relative;
+
+		&:after{
+			position: absolute;
+			display: block;
+			font-family: @icon__primary;
+			content: '\e604';
+			right: 1px;
+			top: 1px;
+			height: 43px;
+			line-height: 43px;
+			font-size: 10px;
+			width: 40px;
+			text-align: center;
+			background-color: white;
+		}
+	}
+
+
+	option{
+		font-size: 13px;
+		line-height: 15px;
+	}
+}

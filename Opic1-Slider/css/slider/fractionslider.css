@@ -1,0 +1,73 @@
+.fraction-slider{
+	position:relative;
+	width:100%;
+	height:auto !important;
+	overflow:visible;
+}
+.fraction-slider .slide{
+	display:none; max-width:1200px; height:100%;
+	width:100%;
+	position:absolute;
+	z-index:5000;
+}
+.fraction-slider .active-slide{
+	z-index:9999;
+}
+.fraction-slider .fs_obj{
+	display:block; display:none;
+	position:absolute;
+	top:10px; left:100%;
+	z-index:7000;
+	height:auto !important;
+}
+.fraction-slider .fs_fixed_obj{
+	left:0;
+}
+.fraction-slider .fs_obj *{
+	display:inline-block;
+	position:relative;
+	top:0px; left:0px;
+}
+/** CONTROLS **/
+.fraction-slider .prev,
+.fraction-slider .next{
+	display:none;
+	position:absolute;
+	width:48px; height:48px;
+	z-index:9999;
+}
+.fraction-slider .prev{
+	left:0px; top:45%;
+	background:url(../../images/prev.png) no-repeat ;
+}
+.fraction-slider .prev:hover{
+	background:url(../../images/prev.png) no-repeat ;
+}
+.fraction-slider .next{
+	right:-15px; top:45%;
+	background:url(../../images/next.png) no-repeat ;
+}
+.fraction-slider .next:hover{
+	background:url(../../images/next.png) no-repeat ;
+}
+.fraction-slider:hover .prev,
+.fraction-slider:hover .next{
+	display:block;
+}
+/** PAGER **/
+.fs-pager-wrapper{
+	position:absolute;
+	left:0px; bottom:10px;
+	z-index:9999;	
+}
+.fs-pager-wrapper a,
+.fs-custom-pager-wrapper a{
+	display:inline-block;
+	width:14px; height:14px;
+	margin:0 5px 0 0;
+	background:url(../../images/fs.pager.png) 0px -14px no-repeat transparent;
+}
+.fs-pager-wrapper .active,
+.fs-custom-pager-wrapper .active{
+	background:url(../../images/fs.pager.png) 0px 0px no-repeat transparent;
+}

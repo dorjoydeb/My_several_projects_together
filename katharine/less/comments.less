@@ -1,0 +1,124 @@
+#comments{
+	margin-top: 80px;
+	margin-bottom: 80px;
+
+	.comments-wrapper{
+
+		.comments-title{
+			font-family: @font-title;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 1em;
+			margin-bottom: 20px;
+		}
+
+		ol.comment-list{
+			margin: 0px;
+			padding: 0px;
+			list-style-type: none;
+			margin-bottom: 60px;
+
+			li{
+				overflow: hidden;
+				display: block;
+
+				article{
+					overflow: hidden;
+					display: block;
+					width: 100%;
+					border-bottom: 1px solid @brand-color;
+					padding-top: 35px;
+					padding-bottom: 35px;
+
+					img.avatar{
+						width: 105px;
+						height: 105px;
+						border-radius: 50%;
+						border: 1px solid fade(@color-second, 50%);
+						padding: 4px;
+						float: left;
+					}
+
+
+					.comment-body{
+						margin-left: 140px;
+
+						.meta-data{
+							overflow: hidden;
+							margin-bottom: 15px;
+
+							.comment-author{
+								font-size: 16px;
+								font-family: @font-text;
+								font-weight: bold;
+								text-transform: uppercase;
+								color: @color-title;
+							}
+
+							.comment-date{
+								float: right;
+								font-size: 13px;
+								color: @color-second;
+							}
+						}
+
+						.comment-content{
+							font-size: 14px;
+							line-height: 26px;
+							color: fade(@color-text, 100%);
+							margin-bottom: 25px;
+						}
+
+						.comment-reply{
+
+							a{
+								font-size: 10px;
+								font-weight: 500;
+								line-height: 10px;
+								display: inline-block;
+								text-transform: uppercase;
+								letter-spacing: 1px;
+								color: @brand-color;
+								border: 1px solid @brand-color;
+								padding: 10px 20px;
+								.transition();
+
+								&:hover{
+									text-decoration: none;
+									background-color: @brand-color;
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+
+				ul, ol{
+					padding-left: 40px;
+				}
+			}
+		}
+	}
+
+}
+
+
+#respond{
+
+	.comment-reply-title{
+		font-size: 30px;
+		font-family: @font-title;
+		font-weight: normal;
+		letter-spacing: 0px;
+		margin-bottom: 40px;
+	}
+
+	.form-submit{
+
+		& > span{
+			display: block;
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+	}	
+}

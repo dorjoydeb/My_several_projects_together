@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Block: Widget Posts
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.widget-posts{
+
+	&__item{
+		position: relative;
+		padding-left: 90px;
+		margin-bottom: 20px;
+		min-height: 75px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&__image{
+		max-width: 75px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&__title{
+		font-size: 13px;
+		font-weight: @font__regular;
+		line-height: 1.5;
+	}
+
+	&__link{
+		color: @color__black;
+		.transition(color);
+
+		&:hover{
+			color: @color__primary;
+		}
+	}
+}

@@ -1,0 +1,178 @@
+.portfolio-filter {
+    text-align: center;
+    margin: 50px 0;
+	font-size: 12px;
+} 
+.portfolio-filter a {
+	padding: 5px 10px;
+    color:#fff;
+	text-align: left;
+    text-decoration:none;
+	width: 150px;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	font-weight:bold;
+	margin-left:10px;
+	line-height: 40px;
+}
+.portfolio-filter a.current,
+.portfolio-filter a:hover {
+	font-weight:bold;
+	color: #435a71;
+	padding: 5px 10px;
+}
+.portfolio-filter a{
+	position:relative;
+}
+.portfolio-filter a.current:after, .portfolio-filter a:after {
+	font-weight: normal;
+}
+.portfolio-filter a:after {
+	content: ' o';
+	position:absolute;
+	top:-9px;
+	left:102%;
+	font-size:18px;
+	width:20px;
+	color: #2874a7;
+	margin-right: -20px;
+}
+.portfolio-filter .last-filter:after {
+	content: '';
+}
+img {
+    margin:5px;
+} 
+.isotope-item {
+    z-index: 2;
+} 
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+} 
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+} 
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+} 
+/**** disabling Isotope CSS3 transitions ****/ 
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+.portfolio-container img {
+	margin: auto;
+	padding: 0;
+}
+.portfolio-container{
+	margin:0 55px;
+}
+.portfolio-item {
+	list-style-type: none;
+	margin: auto;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-item:hover .portfolio-item-caption{
+	opacity: 1;
+}
+.portfolio-item:hover img{
+	opacity: 1;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	overflow:hidden !important;
+}
+.portfolio-item{
+	margin-right:20px !important;
+	margin-bottom:20px !important;
+	overflow:hidden !important;
+	width:300px;
+	height:250px;
+}
+.portfolio-item img{
+	overflow:hidden !important;
+	padding: 0px;
+	width:300px;
+	height:auto;
+	float: left;
+	z-index: 4;
+}
+.portfolio-item i{
+	color:#FFFFFF;
+}
+.portfolio-item .portfolio-item-caption{
+	cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition:all 0.45s ease-in-out;
+	-moz-transition:all 0.45s ease-in-out;
+	-o-transition:all 0.45s ease-in-out;
+	-ms-transition:all 0.45s ease-in-out;
+	transition:all 0.45s ease-in-out;
+}
+.portfolio-item img{
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+}
+.portfolio-item .portfolio-item-blur{
+	background-color:#34495e;
+	height: 205px;
+	width: 250px;
+	z-index: 5;
+	position: relative;
+	margin:25px;
+}
+.portfolio-item .portfolio-item-text h1{
+	text-transform: uppercase;
+	font-family:'Open Sans';
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+.portfolio-item .portfolio-item-text {
+	z-index: 10;
+	color: #fff;
+	position: absolute;
+	height: 210px;
+	width: 250px;
+	text-align: center;
+	top:88px;
+	left:10%;
+	margin: auto;
+}
+.portfolio-item .portfolio-item-text p {
+	font-size: 12px;
+	font-weight: 400;
+	text-transform:uppercase;
+	font-family:'Open Sans';
+}

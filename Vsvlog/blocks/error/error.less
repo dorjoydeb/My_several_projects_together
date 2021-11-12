@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Block: Error
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.error{
+	text-align: center;
+	padding: 60px 0;
+
+	&__primary{
+		font-size: 60px;
+		font-weight: @font__thin;
+		letter-spacing: 0.08em;
+		margin-bottom: 40px;
+	}
+
+	&__secondary{
+		font-size: 14px;
+		font-weight: @font__regular;
+		letter-spacing: 0.04em;
+	}
+
+	&__code{
+		letter-spacing: 0.08em;
+		color: @color__primary;
+		font-weight: @font__light;
+		font-size: 440px;
+		position: relative;
+		line-height: 0.7;
+		margin-bottom: 40px;
+		z-index: 1;
+
+		&:after, &:before{
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			display: block;
+			content: '';
+			background-color: @color__black;
+			left: 0;
+			z-index: -1;
+		}
+
+		&:after{
+			bottom: 35px;
+		}
+
+		&:before{
+			top: 35px;
+		}
+	}
+
+}
+
+.media-mixin(@break) when (@break = @break-medium) {
+	.error{
+		&__code{
+			font-size: 300px;
+		}
+	}
+}
+
+.media-mixin(@break) when (@break = @break-small) {
+	.error{
+		&__primary{
+			font-size: 40px;
+		}
+
+		&__code{
+			font-size: 140px;
+			line-height: 0.5;
+
+			&:before, &:after{
+				background-color: @color__grey;
+			}
+
+			&:before{
+				top: 0px;
+			}
+
+			&:after{
+				bottom: 0px;
+			}
+		}
+	}
+}

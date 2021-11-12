@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Block: Preloader
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.preloader{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 9999;
+	display: none;
+
+	.js-preload-me &{
+		display: block;
+	}
+
+	&__holder{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 18px;
+		.transform(translateX(-50%) translateY(-50%));
+		font-weight: @font__bold;
+		letter-spacing: 0.14em;
+		color: @color__primary;
+
+		&:before{
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			position: absolute;
+			left: -20px;
+			top: 0;
+			background-color: @color__primary;
+			display: block;
+			content: '';
+			.animation(preloader 2s linear infinite);
+		}
+	}
+}
+
+.keyframes(preloader, {
+	0%{
+		opacity: 1;
+	}
+
+	50%{
+		opacity: 0;
+	}
+
+	70%{
+		opacity: 1;
+	}
+});
